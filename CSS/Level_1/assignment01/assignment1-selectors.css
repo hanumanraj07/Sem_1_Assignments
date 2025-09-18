@@ -1,0 +1,52 @@
+p{
+    font-size: medium;
+    line-height: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#site-title{
+    background: scroll url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg);
+    
+    color: rgb(240, 145, 38);
+    padding-left: 30%;
+}
+.muted{
+    color: grey;
+}
+
+.highlight{
+    background-color: bisque;
+    border: 1px solid black;
+}
+
+.highlight-text{
+    background-color: lightblue;
+}
+.img1{
+    border: 2px solid;
+}
+ul{
+    color: rgb(0, 0, 0);
+    list-style: square;
+}
+nav{
+    color: rgb(31, 163, 38);
+}
+li{
+    text-decoration: dashed;
+}
+h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+#override 
+    {
+        background-color: yellow;
+    }
+
+.striped-list li:nth-child(even){
+    background-color: gray;
+}
+.striped-list li:nth-child(odd){
+    background-color: rgb(218, 214, 214);
+}
