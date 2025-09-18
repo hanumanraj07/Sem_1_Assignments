@@ -5,10 +5,14 @@ int main()
 {  
     for(int i=1; i<=5; i++)
     {
-        for(int j=5; j>=i; j--)
+        int ch='A';
+        for(int j=1; j<=5; j++)
+
+        if (j < 5 - i + 1)
         printf("  ");
-        for(int k=0; k<i; k++)
-        printf("%c ",'A'+k);
+        else
+        printf("%c ",ch);
+        ch++;
 
     printf("\n");
     }
