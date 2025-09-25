@@ -2,11 +2,18 @@
 
 int main()
 {
-    for (int i=5;i>=1;i--){
-        for(int j=4;j>=i;j--)
+    for (int i=0;i<=5;i++){
+        int count=0;
+        for(int j=0;j<=5;j++){
+
+        if(j>i){
+        printf("%c ",'A'+count);
+        count++;}
+
+        else{
         printf("  ");
-        for(int k=0;k<i;k++)
-        printf("%c ",'A'+k);
+        }
+        }
         printf("\n");
     }
     return 0;

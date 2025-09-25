@@ -1,15 +1,21 @@
 #include <stdio.h>
 
-int main()
-{
-    for(int i=1;i<=5;i++){
-        for(int j=0;j<i;j++)
-        printf("%c ",'A'+j);
-        int j=0;
-        for (j=i-2;j>=0;j--)
-        printf("%c ",'A'+j);
+int main() {
+    int n = 5;
+
+    for (int i = 1; i <= n; i++) {
+        char ch = 'A';
+        for (int j = 1; j <= i; j++) {
+            printf("%c ", ch);
+            ch++;
+        }
+        ch -= 2;
+        for (int j = 1; j < i; j++) {
+            printf("%c ", ch);
+            ch--;
+        }
         printf("\n");
     }
-    
+
     return 0;
 }

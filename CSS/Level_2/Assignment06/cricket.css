@@ -1,0 +1,103 @@
+body{
+    background-position: left 500px;
+    background-position: top;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)),  url("https://github.com/codinggita/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/06.cricket_app/backgroud.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: 1150px 650px;
+    font-family:Arial, sans-serif;
+    
+    
+     
+}
+img{
+    display: flex;
+    justify-self: end;
+}
+
+.heading{
+   
+    font-size: 20px;
+    
+    margin-left: 65px;
+    
+}
+h1{
+    text-shadow: 2px 1px 4px;
+
+  margin: 0;
+  padding: 0;
+
+
+}
+h3{
+    color: gray;
+    margin: 0;
+  padding-bottom: 30px;
+
+}
+
+.scorecard {
+  display: flex;
+  flex-direction: column;
+  margin-left: 65px;
+  width: 600px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #e74c3c; 
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+.header .title {
+  font-size: 16px;
+}
+
+.header .score {
+  font-size: 14px;
+}
+
+table {
+  
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+th, td {
+  padding: 3px 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+
+small {
+  color: gray;
+  font-size: 12px;
+}
+
+.extras td, .total td {
+  font-weight: bold;
+  background: #fafafa;
+}
+
+.did-not-bat td {
+  font-size: 13px;
+  color: gray;
+  padding: 10px;
+}
+
+

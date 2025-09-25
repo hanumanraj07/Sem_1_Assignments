@@ -3,10 +3,12 @@
 int main()
 {   
    for(int i=1;i<=5;i++){
-   for(int j=4;j>=i;j--)
+   for(int j=1;j<=5+i-1;j++)
+
+   if(j+i<=5)
    printf("  ");
-   for (int  k = 1; k <= 2*i-1; k++)
-   printf("%d ",k);
+   else
+   printf("%d ",j-(5-i));
    printf("\n");
    }
     return 0;

@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+background: radial-gradient(circle at top left, #ff512f, #dd2476, #1e3c72);
+
+  background-size: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.title span {
+  display: block;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.team {
+  width: 220px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+}
+
+.ind {
+  background: #1e50a2;
+}
+
+.pak {
+  background: #2d9b3d;
+}
+
+.team h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.balls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.balls span {
+  background: white;
+  color: black;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.score {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  gap: 50px;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.bat {
+  background: orange url("https://cdn-icons-png.flaticon.com/128/6269/6269232.png") no-repeat center/30px;
+}
+
+.reset {
+  background: red url("https://cdn-icons-png.flaticon.com/128/3106/3106716.png") no-repeat center/30px;
+}
