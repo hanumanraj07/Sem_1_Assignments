@@ -1,40 +1,21 @@
-//q1
+var s1=90;
+var s2=91;
+var s3=75;
+var s4=74;
+var s5=39;
 
-var sub1;
-sub1 = 82;
-var sub2;
-sub2 = 100;
-var sub3;
-sub3 = 90;
-var sub4;
-sub4 = 90;
-var sub5;
-sub5 = 94;
+var total=s1+s2+s3+s4+s5;
+var pers=total/5;
 
-var percentage;
-
-percentage = (sub1 + sub2 + sub3 + sub4 + sub5)/5;
-console.log("Your percentage is "+percentage);
-
-
-
-if(percentage >= 90)
-{
-    console.log("Grade A");
-}
-else if(percentage >80 && percentage<90)
-{
-    console.log("Grade B");
-}
-else if(percentage >=70 && percentage<80)
-{
-    console.log("Grade C");
-}
-else if(percentage >60 && percentage<70)
-{
-    console.log("Grade D");
-}
-else if(percentage <= 60)
-{
-    console.log("Fail");
-}
+if (pers>=90)
+console.log("Grade A");
+else if (pers>=80 && pers<=89)
+console.log("Grade B");
+else if (pers>=70 && pers<=79)
+console.log("Grade C");
+else if (pers>=60 && pers<=69)
+console.log("Grade D");
+else 
+console.log("Fail");
+console.log("Total marks",total);
+console.log("Persentage",pers);
