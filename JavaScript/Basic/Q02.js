@@ -1,26 +1,13 @@
+var unit = 310;
+var charge;
 
-
-
-var unit;
-unit = 305;
-var bill;
-var price;
-
-if(unit >= 0 && unit <= 100)
-{
-    price = 5;
-    bill = price * unit;
-    console.log("Your Bill is : "+bill);
-}
-else if(unit > 100 && unit <= 300)
-{
-    price = 7;
-    bill = 7 * (unit-100) + 500;
-    console.log("Your Bill is : "+bill);
-}
-else if(unit >= 300)
-{ 
-    price = 10;
-    bill = price * (unit - 300) + 500 + 1400;
-    console.log("Your Bill is : "+bill);
-}
+if (unit <=100 && unit >=0){
+    charge =unit*5;
+    console.log("Total Charge is $"+charge);}
+else if (unit >100 && unit <=300){
+    charge =(unit-100)*7+500;
+    console.log("Total Charge is $"+charge);}
+else if (unit >300){
+    charge =(unit-300)*10+1900;
+    console.log("Total Charge is $"+charge);}
+else {console.log("Invalid Input");}

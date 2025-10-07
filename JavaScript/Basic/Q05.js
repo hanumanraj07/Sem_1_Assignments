@@ -1,21 +1,13 @@
-//q5
+var a=10;
+var b=5;
+var c=15;
 
-var num1;
-num1 = 20;
-var num2;
-num2 = 40;
-var num3;
-num3 = 60;
-
-if(num1 > num2 && num1 > num3)
-{
-    console.log(num1+" Is Largest Number");
+if (a>b && a>c) {
+	console.log(a+" is largest");
 }
-else if(num2 > num1 && num2 > num3)
-{
-    console.log(num2+" Is Largest Number");
+else if (b>a && b>c) {
+	console.log(b+" is largest");
 }
-else if(num3 > num1 && num3 > num2)
-{
-    console.log(num3+" Is Largest Number");
+else {
+	console.log(c+" is largest");
 }
