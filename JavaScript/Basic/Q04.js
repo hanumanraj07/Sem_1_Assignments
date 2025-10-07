@@ -1,17 +1,11 @@
-//q4
+var age =19;
 
-var age;
-age = 20;
-
-if(age >= 18)
-{
-    console.log("Eligible to Vote");
+if(age<18 && age>0) {
+	console.log("Not eligible to vote");
 }
-else if(age < 18 && age >= 0)
-{
-    console.log("Not eligible to Vote");
+else if(age>=18) {
+	console.log("Eligible to vote");
 }
-else
-{
-    console.log("Invalid Age");
+else {
+	console.log("Invalid age");
 }
