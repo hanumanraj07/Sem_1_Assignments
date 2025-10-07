@@ -1,25 +1,17 @@
-//q6
+var temp=36;
 
-var celcius;
-celcius = 0;
-
-if(celcius <= 0)
-{
-    console.log("Freezing Point");
+if (temp<0) {
+	console.log("Freezing Cold");
 }
-else if(celcius > 0 && celcius <=15)
-{
-    console.log("Very Cold");
+else if (temp>=0 && temp<=15) {
+	console.log("very Cold");
 }
-else if(celcius > 15 && celcius <=25)
-{
-    console.log("Cold");
+else if (temp>15 && temp<=25) {
+	console.log("Cold");
 }
-else if(celcius > 25 && celcius <=35)
-{
-    console.log("Warm");
+else if (temp>25 && temp<=35) {
+	console.log("Warm");
 }
-else if(celcius >=35)
-{
-    console.log("Hot");
+else {
+	console.log("Hot");
 }
