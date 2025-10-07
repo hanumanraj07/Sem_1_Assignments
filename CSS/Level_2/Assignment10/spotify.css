@@ -1,0 +1,171 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+/* Layout */
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.left {
+  width: 280px;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.logo img {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.data1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.linemate {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.linemate:hover {
+    color: green;
+  background: #1f1f1f;
+}
+
+/* Right Section */
+.right {
+  flex: 1;
+  background: #1d1c1c;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Scrollbar */
+.right::-webkit-scrollbar {
+  width: 6px;
+}
+.right::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Section Titles */
+.good {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 30px 0 20px;
+}
+
+/* Playlist cards */
+.img, .img1 {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  background: #2c2c2c;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.line:hover {
+  transform: scale(1.03);
+  color: green;
+}
+.line img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.mahiti {
+  font-size: 16px;
+  padding: 20px;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Show Cards */
+.box {
+  background: #111;
+  width: 160px;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+.box img {
+  width: 100%;
+  border-radius: 10px;
+}
+.box:hover {
+  transform: scale(1.05);
+  color: green;
+  background: #222;
+}
+.big {
+  font-size: 16px;
+  margin-top: 10px;
+}
+.small {
+  font-size: 13px;
+  color: gray;
+}
+
+/* Bottom Player */
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border-top: 1px solid #333;
+}
+
+.bimg {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.bdata .big {
+  font-size: 14px;
+}
+.bdata .small {
+  font-size: 12px;
+  color: gray;
+}

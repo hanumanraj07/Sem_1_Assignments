@@ -1,3 +1,7 @@
 {
-    "C_Cpp.errorSquiggles": "enabled"
+    "C_Cpp.errorSquiggles": "enabled",
+    "files.associations": {
+        "QAB3.C": "cpp",
+        "QA3.C": "cpp"
+    }
 }

@@ -1,0 +1,99 @@
+body {
+  font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.muted {
+  color: #6b6b6b;
+  font-size: 0.9rem;
+}
+
+.lead {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.subtitle,
+.small-note {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #555;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+.google-heading {
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.fancy::first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+  float: left;
+  margin-right: 4px;
+  line-height: 1;
+}
+
+.fancy::first-line {
+  font-weight: bold;
+}
+
+.subtitle-uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+
+.wrap-example {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.shadow-heading {
+  text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+:root {
+  --type-base: 1rem;
+  --type-lg: 1.25rem;
+  --type-xl: 1.5rem;
+}
+
+h1 {
+  font-size: var(--type-xl);
+}
+
+h2 {
+  font-size: var(--type-lg);
+}
+
+.lead {
+  font-size: 1.1rem;
+}
