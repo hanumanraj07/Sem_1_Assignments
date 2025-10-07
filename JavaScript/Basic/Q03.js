@@ -1,30 +1,16 @@
-//q3
+var income= 2500000;
+var tax;
 
+if (income>=0 && income<=250000)
+console.log("No Tax");
 
-var income;
-income = 1100000;
+else if (income>250000 && income <=500000)
+console.log("You have to pay 5% tax of your income which is $"+income*0.05);
 
-var tax = 1;
+else if (income>500000 && income <=1000000)
+console.log("You have to pay 20% tax of your income which is $"+income*0.2);
 
-if(income <=250000)
-{
-    console.log("No Tax");
-}
-else if(income > 250000 && income <= 500000)
-{
-    console.log("Pay 5% Tax");
-    tax = (income * 0.05);
-    console.log("Total Tax to Pay is : "+tax);
-}
-else if(income > 500000 && income <= 1000000)
-{
-    console.log("Pay 20% Tax");
-    tax = (income * 0.2);
-    console.log("Total Tax to Pay is : "+tax);
-}
-else if(income > 1000000)
-{
-    console.log("Pay 30% Tax");
-    tax = (income * 0.3);
-    console.log("Total Tax to Pay is : "+tax);
-}
+else if (income > 1000000)
+console.log("You have to pay 30% tax of your income which is $"+income*0.3);
+
+else { console.log("invalid input");}
