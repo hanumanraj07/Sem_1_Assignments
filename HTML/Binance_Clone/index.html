@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Binance</title>
+    <link rel="icon" type="image/jpg" href="https://public.bnbstatic.com/20190405/eb2349c3-b2f8-4a93-a286-8f86a62ea9d8.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="bg-dark text-light">
+
+    <nav class="navbar navbar-expand-lg my-navbar fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <span>
+                <a class="navbar-brand fw-semibold" href="#">
+                    <img src="https://cdn.cookielaw.org/logos/99f99939-5a0d-4feb-aef3-ba45f16b6907/5bfb9945-c83c-46f9-8bd7-55e8fd1975b5/02e50907-93f6-477d-a8a2-d581dace49c2/binance-h.png"
+                        alt="Logo" width="120" height="24" class="d-inline-block align-text-top">
+
+                </a>
+            </span>
+
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#markets"><span class="texthover">Buy
+                                Crypto</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#markets"><span
+                                class="texthover">Markets</span></a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><span class="texthover">Trade</span></a>
+                        <div class="dropdown-menu p-3 trade-dropdown dropdown-menu-end" aria-labelledby="tradeMenu">
+                            <div class="row gx-2">
+                                <div class="col-6">
+                                    <h6 class="dropdown-header">Basic</h6>
+                                    <a class="dropdown-item" href="#"><span class="texthover">Spot Trading</span></a>
+                                    <a class="dropdown-item" href="#"><span class="texthover">Quick Buy/Sell</span></a>
+                                    <a class="dropdown-item" href="#"><span class="texthover">Convert</span></a>
+                                </div>
+                                <div class="col-6">
+                                    <h6 class="dropdown-header">Advanced</h6>
+                                    <a class="dropdown-item" href="#"><span class="texthover">Margin</span></a>
+                                    <a class="dropdown-item" href="#"><span class="texthover">Futures</span></a>
+                                    <a class="dropdown-item" href="#"><span class="texthover">API</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><span class="texthover">Feature</span></a>
+                        <ul class="dropdown-menu feature">
+                            <div class="container">
+                                <div class="row">
+                                    <li><a class="dropdown-item" href="#"><span class="texthover">USDⓈ-M
+                                                Futures</span></a></li>
+                                    <li><a class="dropdown-item" href="#"><span class="texthover">COIN-M
+                                                Futures</span></a></li>
+                                    <li><a class="dropdown-item" href="#"><span class="texthover">Options</span></a>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><span class="texthover">Earn</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><span class="texthover">Overview</span></a></li>
+                            <li><a class="dropdown-item" href="#"><span class="texthover">Advance Earn</span></a></li>
+                            <li><a class="dropdown-item" href="#"><span class="texthover">Simple Earn</span></a></li>
+                            <li><a class="dropdown-item" href="#"><span class="texthover">Loans</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><span class="texthover">Square</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#trade">Spot (Demo)</a></li>
+                            <li><a class="dropdown-item" href="#">Futures (Coming)</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><span class="texthover">More</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#trade">Spot (Demo)</a></li>
+                            <li><a class="dropdown-item" href="#">Futures (Coming)</a></li>
+                        </ul>
+                    </li>
+            </div>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
+                aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse justify-content-end ms-4" id="navContent">
+                <ul class="navbar-nav">
+                    <div class="d-flex align-items-center me-auto">
+                        <a href="#" class="nav-link text-light">
+                            <span class="texthover">
+                                <i class="bi bi-search fs-5"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <a href="login.html" class="btn btn-dark text-light ms-4">Log In</a>
+                    <a href="signup.html" class="btn btn-warning text-dark ms-4">Sign Up</a>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 5.5rem;">
+        <section>
+            <div class="cotainer">
+                <div class="row">
+                    <div class="col-6">
+                        <h1 class="user py-5"><span
+                                style="font-size: 80px; color: rgb(243, 193, 46); font-weight:bold">286,729,341</span><br>
+                            <span style="font-size: 80px; color: white; font-weight: bold;">
+                                USERS<br>
+                                TRUST US
+                            </span>
+                        </h1>
+                    </div>
+
+                   
+
+                    <div class="col-6 backgroundcolor my-5 px-5 d-none d-md-block">
+                        <div class="btn-group mb-3" role="group">
+                            <button class="btn text-light butn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#popularList" aria-expanded="true" aria-controls="popularList">
+                                Popular
+                            </button>
+                            <button class="btn text-light butn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#newList" aria-expanded="false" aria-controls="newList">
+                                New Listing
+                            </button>
+                        </div>
+
+                        <div class="collapse show " id="popularList" data-bs-parent="#cryptoGroup">
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="text-decoration-none">
+                                    <div style="background-color:#31394a ;"
+                                        class="list-group-item  text-light border-0 d-flex align-items-center">
+                                        <img src="https://cdn.worldvectorlogo.com/logos/bitcoin.svg" alt="Ethereum"
+                                            width="24" height="24" class="me-2 rounded-circle">
+
+
+                                        <span class="flex-grow-1">Bitcoin (BTC)</span>
+                                        <span class="px-3 price">$109,906.84</span>
+                                        <span class="px-3" style="color:#34d399;">+1.24%</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="text-decoration-none">
+                                    <div style="background-color:#31394a ;"
+                                        class="list-group-item  text-light border-0 d-flex align-items-center">
+                                        <img src="https://cdn.worldvectorlogo.com/logos/ethereum-eth.svg" alt="Ethereum"
+                                            width="24" height="24" class="me-2 rounded-circle">
+
+
+                                        <span class="flex-grow-1">Ethereum (ETH)</span>
+                                        <span class="px-3 price">$3,906.84</span>
+                                        <span class="px-3" style="color:#34d399;">+0.24%</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <div style="background-color:#31394a ;"
+                                        class="list-group-item  text-light border-0 d-flex align-items-center">
+                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/36341.png"
+                                            alt="Ethereum" width="24" height="24" class="me-2 rounded-circle">
+
+
+                                        <span class="flex-grow-1">ASTER (AST)</span>
+                                        <span class="px-3 price">$6.84</span>
+                                        <span class="px-3" style="color:red;">-1.52%</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="text-decoration-none">
+                                    <div style="background-color:#31394a ;"
+                                        class="list-group-item  text-light border-0 d-flex align-items-center">
+                                        <img src="https://cdn.worldvectorlogo.com/logos/solana.svg" alt="Solana"
+                                            width="24" height="24" class="me-2 rounded-circle">
+                                        <span class="flex-grow-1">Solana (SOL)</span>
+                                        <span class="px-3 price">$186.84</span>
+                                        <span class="px-3" style="color:#34d399;">+1.54%</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="text-decoration-none">
+                                    <div style="background-color:#31394a ;"
+                                        class="list-group-item  text-light border-0 d-flex align-items-center">
+                                        <img src="https://cdn.worldvectorlogo.com/logos/binance-coin-bnb-.svg" alt="BNB"
+                                            width="24" height="24" class="me-2 rounded-circle">
+                                        <span class="flex-grow-1">BNB (BNB)</span>
+                                        <span class="px-3 price">$1,906.84</span>
+                                        <span class="px-3" style="color:rgb(234, 63, 63)">-0.24%</span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container px-2">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-secondry" placeholder="Email/Phone"
+                                aria-label="Recipient’s username" aria-describedby="button-addon2">
+                            <a href="signup.html" class="btn btn-warning mx-2" id="button-addon2">Sign Up</a>
+
+                        </div>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                    <div class="col-6 backgroundcolor py-5">
+                        <div class="btn-group mb-3 mx-3" role="group">
+                            <h5>News</h5>
+                        </div>
+                        <div class="list-group list-group-flush mx-3">
+                            <a href="#" class="text-light news" style="text-decoration: none;"><span class="news">Circle
+                                    and Paxos Test New Verification Technology for Stablecoin Issuance</span></a>
+                            <a href="#" class="text-light news" style="text-decoration: none;"><span class="news">Tether
+                                    Treasury Mints Additional USDT on Ethereum Network</span></a>
+                            <a href="#" class="text-light news" style="text-decoration: none;"><span
+                                    class="news">Cryptocurrency Market Experiences $230 Million Liquidation in 24
+                                    Hours</span></a>
+                        </div>
+                    </div>
+                    <div class="other">
+
+                        <img
+                            src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIGhlaWdodD0iNjUiIHdpZHRoPSI2NCI+PHBhdGggZmlsbD0iIzc1NzU3NSIgZD0iTTM2LjU1MSA0MC40NTdjLS4xNS0uMDE4LS4zLS4wNDQtLjQ1MS0uMDU1YTE5LjYzIDE5LjYzIDAgMDEtMS45ODEtLjI2Yy0uMzQtLjA2LS42NzgtLjEzNC0xLjAxNy0uMjAxLS4wNS0uMDEtLjA5OC0uMDIzLS4xNTMtLjAzNnYtLjEyNmMuMDI2LTEuMTQ4LjA2Ny0yLjI5Ni4wNzUtMy40NDQuMDE1LTEuOTYyLjAxOC0zLjkyNC4wMDYtNS44ODUtLjAwNS0uOTQ1LS4wNS0xLjg5LS4wODgtMi44MzRhMi45MiAyLjkyIDAgMDAtLjItLjkwNGMtLjEwOC0uMjg2LS4zMTgtLjQ0LS42MDctLjQ5NS0uMTQtLjAyNy0uMjgyLS4wNDEtLjQyMy0uMDYxbC0uMjE4LS4wMzR2LS40MzhsNC44MTUtLjkxMmMtLjAyMi41NzctLjA0OCAxLjEzOC0uMDY2IDEuN2E4NC40NjggODQuNDY4IDAgMDAtLjAzNyAxLjY5MWMtLjAwNi41NjMtLjAwMSAxLjEyNi0uMDAxIDEuNzAzLjA1My0uMDIxLjEwMy0uMDQuMTUzLS4wNjMuNTM2LS4yMzcgMS4wODctLjQzIDEuNjctLjUyIDEuNTktLjI0NiAyLjkyNS4yMDMgMy45NSAxLjQ3My4zODcuNDguNjcxIDEuMDE2Ljg2MiAxLjYwMWE2LjE1IDYuMTUgMCAwMS4yOTIgMS43MzdjLjAyOC45MTItLjA2MyAxLjgxLS4zNzcgMi42Ny0uNjkyIDEuODk4LTIuMDMyIDMuMDcxLTQuMDA4IDMuNTA3LS4zNTYuMDc4LS43MjMuMTA2LTEuMDg2LjE1OC0uMDU1LjAwOC0uMTA5LjAxOS0uMTYzLjAyOGgtLjk0N3ptLS4yNy0uODcxbC41ODEuMDg0Yy4xMDUuMDE2LjIxLjA0OC4zMTUuMDQ0YTEuNjQgMS42NCAwIDAwLjg1NS0uMjljLjIzLS4xNTUuNDIyLS4zNS41ODctLjU3Mi40MDMtLjU0Mi42NTQtMS4xNTUuODMzLTEuOC4yNy0uOTc0LjMzOS0xLjk2OS4yOTUtMi45NzNhNS45MDIgNS45MDIgMCAwMC0uMjk2LTEuNjU5Yy0uMTYtLjQ2OS0uMzY5LS45MTMtLjY5NC0xLjI5NC0uMzExLS4zNjctLjcwMS0uNjAyLTEuMTgzLS42NmEzLjMzIDMuMzMgMCAwMC0uOTg3LjAzN2MtLjE0My4wMjYtLjI4NC4wNjQtLjQzMS4wOTguMDE0IDMuMDA1LjAxIDUuOTkuMTI0IDguOTg1em0tMTkuNDU1Ljg3Yy0uMTQ2LS4wMi0uMjktLjA0My0uNDM3LS4wNi0uNzY2LS4wODktMS40OTQtLjI5Ni0yLjE1NS0uNzA1LS43MTYtLjQ0My0xLjIzLTEuMDctMS42MjctMS44YTUuOTggNS45OCAwIDAxLS42NzUtMi4yM2MtLjA5MS0uODM2LS4wNjgtMS42NjYuMTMyLTIuNDgzLjM4MS0xLjU1OCAxLjI2My0yLjc0MiAyLjY5MS0zLjQ5OC41NzctLjMwNSAxLjIwMS0uNDY0IDEuODQ4LS41NGE3LjQ1OCA3LjQ1OCAwIDAxMi4xNTguMDZjMS40NjYuMjU1IDIuNTYyIDEuMDMgMy4yOTMgMi4zMjQuNC43MS42MzIgMS40Ny43MyAyLjI3Ni4wODMuNy4wODEgMS40LS4wMzQgMi4wOTYtLjI4NCAxLjcxLTEuMTQ1IDMuMDMtMi42NjUgMy44OTQtLjYyMy4zNTQtMS4zMDYuNTI5LTIuMDE1LjYwOC0uMTMuMDE0LS4yNi4wMzktLjM5LjA1OGgtLjg1NHptMi42MzEtNS42MTFjLjAwOC0uNzY0LS4wMy0xLjUyNC0uMTU3LTIuMjc3YTYuMDY4IDYuMDY4IDAgMDAtLjQ5OC0xLjY0MiAyLjQ2IDIuNDYgMCAwMC0uNTEtLjczNCAxLjI1IDEuMjUgMCAwMC0uNjM0LS4zNDdjLS41ODgtLjEwOC0xLjA4OC4wNDgtMS40NzUuNTE1YTIuOCAyLjggMCAwMC0uMjQuMzUyIDMuODA4IDMuODA4IDAgMDAtLjM2OC45NDljLS4yMDIuNzcxLS4yNzMgMS41Ni0uMyAyLjM1Mi0uMDI4LjgzNC0uMDIgMS42NjcuMDg1IDIuNDk2LjA3Ny42MTEuMiAxLjIxMi40MjcgMS43ODcuMTM2LjM0Ny4zMDMuNjc3LjU1Ni45NTYuNjI2LjY5MSAxLjYyNC42NjIgMi4yMS0uMDYzLjE0NC0uMTc5LjI1OC0uMzc3LjM1LS41ODYuMjMzLS41MjYuMzQ5LTEuMDgxLjQyNy0xLjY0Ni4wOTctLjcuMTMxLTEuNDA2LjEyNy0yLjExMnptMjkuNzA2IDUuNjEzYy0uMi0uMDMtLjQtLjA2Mi0uNjAxLS4wOS0yLjEtLjI5My0zLjg4Ny0xLjkyNC00LjM0MS0zLjk5My0uMy0xLjM2Ny0uMjM0LTIuNzIuMzA2LTQuMDIzLjQzLTEuMDQgMS4xMTItMS44ODYgMi4wODMtMi40OGE1LjA0MiA1LjA0MiAwIDAxMS44ODYtLjY2NiA2LjY5NyA2LjY5NyAwIDAxMS42NDMtLjA2YzEuMzA4LjEyIDIuMzU2LjY4NiAzLjA4IDEuODAzYTUuMzIgNS4zMiAwIDAxLjc2OSAyLjAyMmMuMDYzLjM3MS4wOTguNzQ1LjA5OSAxLjEyMnYuMTY4aC02LjcyM2MtLjAxNi4wMjYtLjAyNS4wMzQtLjAyNi4wNDMtLjAzNi43NDkuMDQxIDEuNDgxLjMxMyAyLjE4NS4xODguNDkuNDY4LjkyNC44MjQgMS4zMDguNDA0LjQzNy45LjcyNyAxLjQ3My44OGE0LjUxNyA0LjUxNyAwIDAwMi4zNTMuMDE1Yy40MTItLjExLjc5LS4yOTMgMS4xMzktLjUzN2wuMTUtLjEwNS4zMTEuMzc1YTMuNjkzIDMuNjkzIDAgMDEtLjc4LjgwMmMtLjc0LjU2LTEuNTUuOTY4LTIuNDc0IDEuMTI2LS4xOS4wMzItLjM4My4wNS0uNTc0LjA3Ny0uMDM5LjAwNi0uMDc3LjAxOC0uMTE2LjAyOGgtLjc5NHptMS41NzctNy4wMTZjLjAwNC0uMDQ3LjAwNy0uMDcyLjAwNy0uMDk3YTEyLjA0NSAxMi4wNDUgMCAwMC0uMDk1LTEuNTM1Yy0uMDU0LS4zOTgtLjEzMy0uNzkxLS4yOTItMS4xNjRhMS43MyAxLjczIDAgMDAtLjMyLS41MTUuOTUuOTUgMCAwMC0uNzM0LS4zMTVjLS4zOTkuMDA1LS43MTIuMTgzLS45NjUuNDc4LS4xODEuMjEtLjMxMy40NS0uNDI1LjcwMi0uMzQ5Ljc4My0uNDggMS42MTItLjUxNCAyLjQ2IDAgLjAxMy4wMS4wMjYuMDIuMDUgMS4xLS4wMiAyLjIwMy0uMDQyIDMuMzE4LS4wNjR6bTcuNDAyIDcuMDE0Yy0uMTU2LS4wMTktLjMxMi0uMDQzLS40NjgtLjA1NWExMCAxMCAwIDAxLTIuNTQ2LS41M2MtLjA4LS4wMjgtLjE2LS4wNjItLjI0Ni0uMDk1bC0uMTI2LTMuMTQ5LjUzMy0uMTU2Yy4wNC4wOTkuMDcyLjE4My4xMDUuMjY4LjE3Ny40NS4zODQuODg1LjY1IDEuMjkuMjI0LjM0Mi40ODIuNjU1LjgwNy45MDguNjYuNTE0IDEuNDAzLjY4IDIuMjEzLjQ3OS43MzUtLjE4MyAxLjQ0Mi0xLjAyOSAxLjE1NC0yLjAyNWExLjUzNiAxLjUzNiAwIDAwLS42MS0uODM0IDUuMDUxIDUuMDUxIDAgMDAtMS4wNjgtLjU1MmMtLjM5Ni0uMTYtLjc5OC0uMzAzLTEuMTkzLS40NjRhNi4xMzQgNi4xMzQgMCAwMS0xLjIxNy0uNjYxYy0uNjg2LS40ODQtMS4wMzUtMS4xNS0xLjEwNy0xLjk3OC0uMTEtMS4yODEuNDE1LTIuMjU3IDEuNDM0LTIuOTk1LjU1LS4zOTggMS4xNzMtLjYyMyAxLjg0LS43MzMuNzctLjEyNyAxLjU0LS4xMDEgMi4zMS0uMDA5LjYzNS4wNzYgMS4yNS4yMjUgMS44NDMuNDY0LjA5Ni4wMzguMTQyLjA4NS4xNDcuMTk3LjAzMy44MzcuMDczIDEuNjc0LjExMSAyLjUxMiAwIC4wMTUtLjAwMi4wMy0uMDA1LjA2M2wtLjUyMy4xNTVjLS4wMjQtLjA2Ny0uMDQ2LS4xMjItLjA2NS0uMThhNS43MTIgNS43MTIgMCAwMC0uNjIzLTEuMzE4IDMuMDE4IDMuMDE4IDAgMDAtLjYzNy0uNzE0IDIuMTkgMi4xOSAwIDAwLTEuNjY4LS40ODJjLS41NS4wNjMtLjkwNC4zODYtMS4xMTUuODhhMS43ODMgMS43ODMgMCAwMC0uMTAzLjk4OGMuMDU1LjM1LjI0My42My41MS44Ni4yLjE3NS40My4zMDcuNjY0LjQzLjQ1Ni4yMzcuOTM0LjQyMyAxLjQxNS42MDQuNDQzLjE2Ny44NzIuMzY1IDEuMjc3LjYxMS4yNTcuMTU3LjUuMzMzLjcxMi41NDcuNDI4LjQyOC42NTIuOTQ5LjY5OCAxLjU1LjAwMy4wNDMuMDE4LjA4Ni4wMjcuMTN2LjY0Yy0uMDEyLjEwNC0uMDIxLjIxLS4wMzguMzE0LS4xMTUuNzQxLS40MjcgMS4zOC0uOTkyIDEuODg2YTMuOTcgMy45NyAwIDAxLS44OS42MDdjLS41NTcuMjc3LTEuMTUyLjQxNy0xLjc2Ni40ODYtLjE1Ni4wMTctLjMxMS4wNC0uNDY3LjA2aC0uOTc3ek02LjQyNyAzMi4yMDNjLjA0Ny4wMDQuMDc3LjAwOC4xMDcuMDA4bDEuNTI2LS4wMjdjLjQxNy0uMDA4Ljc5MS0uMTI4IDEuMTAyLS40MTQuMTk0LS4xNzguMzQtLjM5LjQ2LS42MjIuMTQ4LS4yODYuMjQ4LS41OS4zMy0uOWwuMDQzLS4xNDZoLjU5OWMuMDM1LjEwOS4wNSA0LjgzMy4wMTYgNS4xMjZoLS42MTRjLS4wMTItLjAzOS0uMDI5LS4wODUtLjA0MS0uMTMzYTMuODA0IDMuODA0IDAgMDAtLjM0Mi0uOTI2IDMuMDY3IDMuMDY3IDAgMDAtLjMzMi0uNDkxIDEuNDg1IDEuNDg1IDAgMDAtMS4xMzItLjU0OGMtLjU0NC0uMDE0LTEuMDg5LS4wMjEtMS42MzMtLjAzLS4wMjUtLjAwMS0uMDUuMDA0LS4wODcuMDA5LS4wMDMuMDQ1LS4wMDkuMDktLjAwOC4xMzMuMDEgMS4xMTMuMDMgMi4yMjYuMTA2IDMuMzM3LjAzLjQ0NS4wNTcuODkyLjEgMS4zMzYuMDIuMTkuMDY5LjM4LjEyLjU2NS4xNS41My41MTYuODQ2IDEuMDQuOTY0LjI4LjA2My41NzUuMDY3Ljg2My4wOThsLjIyOC4wMjJ2LjYxM0guNzM3Yy0uMDE2LS4yLS4wMDctLjQtLjAwNS0uNjEybC4zMzgtLjA1M2MuMTk2LS4wMzEuMzk2LS4wNDcuNTg2LS4wOThhMi4xIDIuMSAwIDAwLjQ3Ny0uMTk1Ljk5OC45OTggMCAwMC40MzMtLjQ5N2MuMTI4LS4zMDIuMjA3LS42MTguMjM5LS45NDFhNDIuNCA0Mi40IDAgMDAuMTQ3LTEuNzc3Yy4wNzQtMS4yMzguMTA2LTIuNDc3LjA5LTMuNzE3YTYxLjk4IDYxLjk4IDAgMDAtLjEzNS0zLjYxYy0uMDMxLS40NC0uMDYtLjg4Mi0uMS0xLjMyMmEyLjYwNSAyLjYwNSAwIDAwLS4xODMtLjczNiAxLjE4IDEuMTggMCAwMC0uNTM2LS42MDQgMi4wODIgMi4wODIgMCAwMC0uODQtLjI1NGwtLjQyNi0uMDM3Yy0uMDI0LS4wMDMtLjA0OC0uMDEtLjA4Mi0uMDE4di0uNTkzbC4wMS0uMDFjLjAwNC0uMDAzLjAwOC0uMDA4LjAxMi0uMDA5LjAyNS0uMDAzLjA1LS4wMDguMDc1LS4wMDhsMTIuNDczLjAwMWMuMDE0IDAgLjAyOC4wMDguMDU3LjAxNmwuMTI3IDQuMjA2LS43NTEuMjJjLS4wMjMtLjA2My0uMDQ2LS4xMTgtLjA2NC0uMTc0LS4xOTktLjYxMS0uNDUyLTEuMTk3LS44MTgtMS43MjktLjM5LS41NjQtLjg3OC0xLjAxMi0xLjUyNC0xLjI3YTMuMDk0IDMuMDk0IDAgMDAtMS4xMy0uMjI4Yy0uODQ1LS4wMDctMS42OS0uMDAzLTIuNTM0LS4wMDMtLjAyNSAwLS4wNS4wMDQtLjA5LjAwOC0uMDA1LjA1LS4wMTIuMDk5LS4wMTUuMTQ4YTcxLjA5IDcxLjA5IDAgMDAtLjEzMyA0LjAwNkw2LjQyIDMyLjA3YzAgLjA0LjAwNC4wOC4wMDcuMTMzeiIvPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Ik0yOS42MTggMzkuNTk2di41NjVjLS4xMDguMDM1LTYuMzMxLjA1MS02LjY4My4wMTZhMTQuNTU0IDE0LjU1NCAwIDAxMC0uNThjLjExLS4wMTcuMjE0LS4wNC4zMi0uMDQ5Ljc1LS4wNTggMS4wMTQtLjUzNSAxLjEwOC0xLjA0NC4wNDgtLjI2NC4wNjktLjUzNC4wODktLjgwMi4wOTUtMS4yNDcuMTM0LTIuNDk3LjA5LTMuNzQ2LS4wMjctLjc1MS0uMDkzLTEuNS0uMTQ4LTIuMjVhMS42NDggMS42NDggMCAwMC0uMTg1LS42NGMtLjE3Ni0uMzM3LS40NS0uNTMtLjgzNC0uNTU3LS4xNDEtLjAxLS4yODItLjAyMi0uNDQzLS4wMzV2LS40MzdsNC44LS45NDctLjAzMiAyLjQ0Mi4wMjUuMDA4Yy4wMjQtLjA0OC4wNDgtLjA5Ni4wNy0uMTQ0LjI3Ni0uNTg2LjYzNC0xLjExMiAxLjE0Mi0xLjUyNS4yNDEtLjE5Ni41LS4zNjYuNzc2LS41MDkuNzI4LS4zNzcgMS40Ny0uMzMgMi4yMi0uMDc2LjA5LjAzLjE3Ny4wNzMuMjgyLjExN2wtMS4xNjYgMi45MjktLjE1OS0uMDhjLS40MzMtLjIzMy0uODg2LS40MS0xLjM3Ny0uNDdhMi42ODggMi42ODggMCAwMC0xLjI3Ny4xNDIuOTk2Ljk5NiAwIDAwLS40Ny4zMjUuMzY0LjM2NCAwIDAwLS4wNy4xNzggMzEuMTE2IDMxLjExNiAwIDAwLS4wODUgMy40MjZjLjAyMy44MzMuMDc1IDEuNjY1LjE3OCAyLjQ5Mi4wMi4xNy4wNjUuMzQuMTI1LjUuMTYyLjQyNS40NzIuNjYyLjkzMy42OTIuMTkzLjAxMi4zODUuMDI1LjU3OC4wMzkuMDYuMDA0LjEyLjAxMi4xOTMuMDJ6Ii8+PC9zdmc+">
+                        <span style="font-size: smaller; color: gray;">Recognized as Forbes' Most Trusted Crypto
+                            Exchanges 2025</span>
+                        <img style="width: 65px;"
+                            src="data:image/png;base64,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">
+                        <span style="font-size: smaller; color: gray;">Listed #1 in Fortune's FinTech Innovators Asia
+                            2024 in Blockchain & Crypto</span>
+                        <img style="width: 65px;"
+                            src="data:image/png;base64,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">
+                        <span style="font-size: smaller; color: gray;">Named CNBC's World's Top Fintech Companies 2025
+                            in Digital Assets</span>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-2 text-secondary">
+                                <p>Or Continue with</p>
+                                <span class="texthover me-2">
+                                    <button class="btn btn-dark">
+                                        <i class="bi bi-google fs-3"></i>
+                                    </button>
+                                </span>
+                                <span class="texthover">
+                                    <button class="btn btn-dark">
+                                        <i class="bi bi-apple fs-3"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-2 text-secondary">
+                                <p>Download App</p>
+                                <span class="texthover mx-2">
+                                    <i class="bi bi-qr-code fs-3"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container py-5 my-5">
+                <div class="row">
+                    <div class="col-3">
+                        <div id="viewArea" class="view-area ">
+                            <img alt="download-img" width="100px" height="auto" class="image1"
+                                src="https://github.com/kartikeyvashist/binance-clone/blob/master/phone.png?raw=true">
+                            <img alt="download-img" width="100px" height="auto"
+                                src="https://github.com/kartikeyvashist/binance-clone/blob/master/phone2.png?raw=true">
+
+                        </div>
+                        <br>
+                        <div class="mode-switcher  position-relative">
+                            <button id="btnDesktop" style="text-decoration: none;"
+                                class="btn btn-link text-secondary">Desktop</button>
+                            <button id="btnLite" style="text-decoration: none;"
+                                class="btn btn-link text-secondary">Lite</button>
+                            <button id="btnPro" style="text-decoration: none;"
+                                class="btn btn-link text-secondary">Pro</button>
+                            <div id="underline" class="underline position-absolute"></div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+
+                    </div>
+
+                    <div class="col-6">
+                        <h1>Trade on the go. Anywhere, anytime.</h1>
+                        <div class="row">
+                            <div class="col-4">
+                                <img style="width: 150px; height: 150px;"
+                                    src="https://public.bnbstatic.com/image/cms/blog/20241108/4ed709c7-2d2b-4498-8ee9-fb667ea838fd"
+                                    alt="">
+
+                            </div>
+                            <div class="col-4">
+                                <p class="text-secondary">Scan to Download App</p>
+                                <p class="lead">Scan to Download App</p>
+                            </div>
+                        </div>
+                        <div class="col-6 py-5">
+                            <button class="btn btn-dark">
+                                <span class="texthover">
+                                    <i class="bi bi-google fs-2"></i>
+                                </span>
+                            </button>
+
+                            <button class="btn btn-dark">
+                                <span class="texthover">
+                                    <i class="bi bi-apple fs-2"></i>
+                                </span>
+                            </button>
+
+                            <button class="btn btn-dark">
+                                <span class="texthover">
+                                    <i class="bi bi-tux"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1 class="text-center">Frequently Asked Questions?</h1>
+            </div>
+            <div class="row">
+                <div class="container my-5">
+                    <div class="accordion bg-dark" id="faqAccordion">
+                        <div class="accordion-item border-0">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed bg-dark text-light" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseOne">
+                                    <span class="faq-icon me-2 bg-dark text-light"></span>
+                                    What is Binance and how does it work?
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body bg-dark text-secondary">
+                                    Binance is a cryptocurrency exchange enabling trading, staking, and more.
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0">
+                                <h3 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed bg-dark text-light" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapsetwo">
+                                        <span class="faq-icon me-2 bg-dark text-light"></span>
+                                        What is Binance and how does it work?
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingtwo"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body bg-dark text-secondary">
+                                        Binance is a cryptocurrency exchange enabling trading, staking, and more.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
+        <section class="text-center py-5">
+            <h1 class="py-5">Start earning today</h1>
+            <a href="signup.html" class="btn btn-warning btn-lg">Sign Up Now</a>
+
+
+        </section>
+
+        <footer class="bg-dark text-light py-5">
+            <footer class="bg-dark text-light py-5">
+                <div class="container text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>About Us</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">About</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Careers</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Announcements</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">News</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Press</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Terms</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Privacy</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Blog</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Products</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Exchange</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Buy Crypto</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Pay</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Academy</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Live</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Launchpool</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">NFT</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Research</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Business</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Listing Application</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Institutional & VIP Services</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Labs</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Service</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Downloads</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Desktop Application</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Affiliate</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Referral</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Historical Market Data</a></li>
+                                <li><a href="#" class="text-light text-decoration-none link-warning"
+                                        class="text-light">Proof of Reserves</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5>Community</h5>
+                            <div class="community-icons d-flex flex-wrap justify-content-center gap-3">
+                                <a href="#" class="text-light fs-5"><i class="bi bi-discord texthover"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-telegram texthover"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-tiktok texthover"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-facebook texthover"></i></a>
+
+                                <a href="#" class="text-light fs-5"><i class="bi bi-twitter-x texthover"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-reddit texthover"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-instagram texthover"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-coin texthover"></i></a>
+
+                                <a href="#" class="text-light fs-5"><i class="bi bi-youtube texthover"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-whatsapp texthover"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-three-dots texthover"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="bg-secondary">
+                    <p class="text-center mb-0">&copy; 2025 Binance Clone. All rights reserved.</p>
+                </div>
+            </footer>
+
+        </footer>
+
+
+
+
+</body>
+
+</html>
