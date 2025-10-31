@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology - BNB Chain</title>
+    <link rel="icon" type="image/jpg" href="https://static.bnbchain.org/home-ui/static/images/logo.svg">
+    <style>
+         
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #f0b90b;
+            --dark: #1e2026;
+            --dark-gray: #2b2f36;
+            --medium-gray: #474d57;
+            --light-gray: #eaecef;
+            --white: #ffffff;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--white);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--white);
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--primary);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--dark);
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #f8d33a;
+            transform: translateY(-2px);
+            color: var(--dark);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: var(--dark);
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--light-gray);
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--dark);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 32px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Page Styles */
+        .page-header {
+            background-color: var(--dark-gray);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .page-content {
+            padding: 60px 0;
+        }
+
+        .content-block {
+            margin-bottom: 60px;
+        }
+
+        .content-block h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .content-block p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .content-block ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .content-block li {
+            margin-bottom: 10px;
+        }
+
+        .tech-architecture {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .tech-card {
+            background-color: var(--dark-gray);
+            border-radius: 8px;
+            padding: 30px;
+            transition: transform 0.3s;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tech-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .tech-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        .comparison-table th, .comparison-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--medium-gray);
+        }
+
+        .comparison-table th {
+            background-color: var(--dark-gray);
+            color: var(--primary);
+        }
+
+        .comparison-table tr:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-gray);
+            padding: 60px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h4 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--medium-gray);
+            padding-top: 30px;
+            text-align: center;
+            color: var(--light-gray);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: var(--dark);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .comparison-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <h2><img src="https://cdn.cookielaw.org/logos/ae41c6b2-058d-429f-b670-c89bbe34ec85/01929491-d19e-7690-a763-aa48a451d2c7/79b977da-95c8-4706-9ebe-b0810f8c9519/Frame_480972175.png" alt=""></h2>
+                </a>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="technology.html" style="color: var(--primary);">Technology</a></li>
+                <li><a href="ecosystem.html">Ecosystem</a></li>
+                <li><a href="developers.html">Developers</a></li>
+                <li><a href="#" class="btn">Launch dApp</a></li>
+            </ul>
+        </div>
+    </header>
+
+   
+    <section class="page-header">
+        <div class="container">
+            <h1>BNB Chain Technology</h1>
+            <p>Discover the innovative architecture that powers the world's largest blockchain ecosystem</p>
+        </div>
+    </section>
+
+  
+    <section class="page-content">
+        <div class="container">
+            <div class="content-block">
+                <h2>Dual-Chain Architecture</h2>
+                <p>BNB Chain employs a unique dual-chain architecture that enables users to build their decentralized apps and digital assets on one blockchain and leverage the fast trading to exchange them on the other.</p>
+                
+                <div class="tech-architecture">
+                    <div class="tech-card">
+                        <div class="tech-icon">🔗</div>
+                        <h3>BNB Beacon Chain</h3>
+                        <p>Handles governance, staking, and voting. It serves as the backbone of the BNB Chain ecosystem with its Delegated Proof of Stake consensus.</p>
+                        <ul>
+                            <li>Governance and staking</li>
+                            <li>Token management</li>
+                            <li>Cross-chain transfers</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">⚡</div>
+                        <h3>BNB Smart Chain</h3>
+                        <p>EVM-compatible blockchain designed for high-performance dApps with low transaction fees and fast block times.</p>
+                        <ul>
+                            <li>EVM compatibility</li>
+                            <li>Low transaction fees</li>
+                            <li>3-second block time</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h2>Consensus Mechanism</h2>
+                <p>BNB Chain uses a Proof of Staked Authority (PoSA) consensus algorithm that combines the benefits of Proof of Stake (PoS) and Proof of Authority (PoA).</p>
+                
+                <h3>Key Features:</h3>
+                <ul>
+                    <li><strong>21 Validators:</strong> A limited set of validators ensures high performance and fast finality</li>
+                    <li><strong>Staking:</strong> BNB holders can stake their tokens to participate in governance</li>
+                    <li><strong>Cross-chain Transfer:</strong> Seamless asset transfer between BNB Beacon Chain and BNB Smart Chain</li>
+                    <li><strong>Low Energy Consumption:</strong> Environmentally friendly compared to Proof of Work systems</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h2>Performance Comparison</h2>
+                <p>BNB Chain offers superior performance compared to other major blockchain networks:</p>
+                
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>BNB Chain</th>
+                            <th>Ethereum</th>
+                            <th>Solana</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Transactions per Second</td>
+                            <td>~100 TPS</td>
+                            <td>~15 TPS</td>
+                            <td>~65,000 TPS</td>
+                        </tr>
+                        <tr>
+                            <td>Block Time</td>
+                            <td>3 seconds</td>
+                            <td>12 seconds</td>
+                            <td>0.4 seconds</td>
+                        </tr>
+                        <tr>
+                            <td>Average Transaction Fee</td>
+                            <td>$0.10 - $0.30</td>
+                            <td>$5 - $50</td>
+                            <td>$0.00025</td>
+                        </tr>
+                        <tr>
+                            <td>Finality</td>
+                            <td>Single block</td>
+                            <td>12 blocks</td>
+                            <td>32 blocks</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="content-block">
+                <h2>Upcoming Innovations</h2>
+                <p>BNB Chain continues to evolve with several major upgrades in development:</p>
+                
+                <div class="tech-architecture">
+                    <div class="tech-card">
+                        <h3>zkBNB</h3>
+                        <p>Zero-knowledge rollup solution for scaling BNB Chain with enhanced privacy and reduced costs.</p>
+                    </div>
+                    <div class="tech-card">
+                        <h3>BNB Sidechains</h3>
+                        <p>Customizable sidechains for specific use cases with customizable parameters and governance.</p>
+                    </div>
+                    <div class="tech-card">
+                        <h3>Storage Network</h3>
+                        <p>Decentralized storage solution integrated with BNB Chain for comprehensive Web3 infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>BNB Chain</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="ecosystem.html">Ecosystem</a></li>
+                        <li><a href="developers.html">Developers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Developers</h4>
+                    <ul class="footer-links">
+                        <li><a href="developers.html#docs">Documentation</a></li>
+                        <li><a href="developers.html#tools">Tools</a></li>
+                        <li><a href="developers.html#grants">Grants</a></li>
+                        <li><a href="developers.html#support">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Community</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Telegram</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 BNB Chain. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

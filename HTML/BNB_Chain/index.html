@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNB Chain</title>
+    <link rel="icon" type="image/jpg" href="https://static.bnbchain.org/home-ui/static/images/logo.svg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #f0b90b;
+            --dark: #1e2026;
+            --dark-gray: #2b2f36;
+            --medium-gray: #474d57;
+            --light-gray: #eaecef;
+            --white: #ffffff;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--white);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--white);
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--primary);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--dark);
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #f8d33a;
+            transform: translateY(-2px);
+            color: var(--dark);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: var(--dark);
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--light-gray);
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+ 
+        header {
+            background-color: var(--dark);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 32px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+ 
+        .hero {
+            background: url(https://static.bnbchain.org/home-ui/static/images/new-home/bg.png);
+            padding: 180px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--light-gray);
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+ 
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: #181A1E;
+            border-radius: 24px;
+            padding: 30px;
+            transition: transform 0.3s;
+            box-shadow: 0 24px 64px 0 rgba(0, 0, 0, 0.48);
+            
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+ 
+        .stats {
+            background-color: var(--dark-gray);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+ 
+        .ecosystem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .ecosystem-card {
+            background-color: var(--dark-gray);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .ecosystem-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .ecosystem-img {
+            height: 160px;
+            background-color: var(--medium-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ecosystem-content {
+            padding: 20px;
+        }
+
+        .ecosystem-content h3 {
+            margin-bottom: 10px;
+        }
+ 
+        footer {
+            background-color: var(--dark-gray);
+            padding: 60px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h4 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--medium-gray);
+            padding-top: 30px;
+            text-align: center;
+            color: var(--light-gray);
+            font-size: 0.9rem;
+        }
+
+         
+        .page-header {
+            background-color: var(--dark-gray);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .page-content {
+            padding: 60px 0;
+        }
+
+        .content-block {
+            margin-bottom: 60px;
+        }
+
+        .AIbtn {
+            border: 1px solid gold;
+            padding: 4px;
+            margin: 6px;
+            border-radius: 20px;
+            color: gold;
+            transition: 0.3s ease;
+            font-size: 1.2vw;
+        }
+        .AIbtn1 {
+            border: 1px solid gold;
+            padding: 4px;
+            margin: 6px;
+            border-radius: 20px;
+            color: gold;
+            transition: 0.3s ease;
+            font-size: 1.5vw;
+        }
+
+        .AIbtn:hover {
+            background-color: gold;
+            color: black;
+
+        }
+        .AIbtn1:hover {
+            background-color: gold;
+            color: black;
+
+        }
+
+        .content-block h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .content-block p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .content-block ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .content-block li {
+            margin-bottom: 10px;
+        }
+
+         
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: var(--dark);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 10px;
+            }
+        }
+
+        #contbtn {
+            height: 5vh;
+            border-radius: 1vh;
+            display: flex;
+            align-items: center;
+            background-color: white;
+        }
+
+        #search {
+            width: 85%;
+            height: 99%;
+
+            border-radius: 5vh;
+            border: none;
+        }
+
+        input:focus {
+            padding-left: 3vh;
+            outline: none;
+            box-shadow: none;
+        }
+
+        #search:hover {
+            border: none;
+        }
+
+        .srcbox {
+            display: flex;
+            margin-top: 5vh;
+            border-radius: 5vh;
+             justify-self: center;
+            width: 50%;
+            height: 7vh;
+            background-color: white;
+        }
+
+        .srcbox:hover {
+            outline: 2px solid gold;
+        }
+
+        #defi {
+            width: 100%;
+            height: 100%;
+        }
+
+        .midimg {
+    display: flex;
+    padding: 12vh;
+    gap: 2vh; 
+}
+
+.leftimg,
+.middleimg,
+.rightimg {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+   
+    gap: 2.5vh;
+}
+
+.middleimg {
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.img1, .img2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;  
+    aspect-ratio: 16 / 9;  
+    border-radius: 20px;
+    background-color: #2d2f32;
+}
+.img1{
+    height: 22.5vh;
+}
+
+ 
+@media (max-width: 768px) {
+    .midimg {
+        padding: 4vh 2vh;
+        flex-direction: column;    
+        align-items: center;
+    }
+
+    .leftimg,
+    .middleimg,
+    .rightimg {
+        width: 100%;    
+        margin: 0;
+
+    }
+
+    .img1, .img2 {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;  
+        border-radius: 15px;
+    }
+}
+
+
+        .text1 {
+            padding-left: 4vh;
+        }
+
+        .text1 p {
+            color: gray;
+        }
+
+        .text1 h1 {
+            font-size: 3rem;
+        }
+        .fire{
+            background-color: yellow;
+            border-radius: 5vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <h2><img src="https://cdn.cookielaw.org/logos/ae41c6b2-058d-429f-b670-c89bbe34ec85/01929491-d19e-7690-a763-aa48a451d2c7/79b977da-95c8-4706-9ebe-b0810f8c9519/Frame_480972175.png"
+                            alt=""></h2>
+                </a>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="ecosystem.html">Ecosystem</a></li>
+                <li><a href="developers.html">Developers</a></li>
+                <li><a href="#" class="AIbtn1">Ask AI</a></li>
+                <li><a href="#" class="btn" id="contbtn">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section class="hero">
+        <div class="container">
+            <h1>The World's Largest Blockchain Ecosystem</h1>
+            <p>BNB Chain is a community-driven, decentralized, and censorship-resistant blockchain ecosystem. It is
+                composed of BNB Beacon Chain and BNB Smart Chain (BSC).</p>
+            <div class="hero-btns">
+                <a href="developers.html" class="btn">Start Building</a>
+                <a href="ecosystem.html" class="btn btn-outline">Explore dApps</a>
+            </div>
+            <div class="srcbox"> <input type="text" id="search"
+                    placeholder=" How do I start building or deploying a App?">
+                <a href="#" class="AIbtn">Ask AI</a>
+            </div>
+        </div>
+    </section>
+
+     
+    <section>
+        <div class="container">
+            <h2 class="section-title"><span class="fire">🔥</span>
+                Build the Next Big Trend on Chain</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>Stablecoin</h3>
+                    <p>Power stable value onchain with fast transactions and low fees, enabling everyday payments and DeFi use cases.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>Real World Assets</h3>
+                    <p>Bring assets like treasuries and gold on-chain, making them liquid, composable, and accessible in DeFi.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>Memecoin</h3>
+                    <p>Launch and grow meme tokens with deep liquidity, trading activity, and a vibrant community on BNB Chain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Proof That Builders Grow Here</h2>
+        <div class="midimg">
+            <div class="leftimg">
+                <div class="img1"><img style="height: 22vh;"
+                        src="https://static.bnbchain.org/home-ui/static/images/new-home/builder/b1.png" alt=""></div>
+                <div class="img1  text1">
+                    <h1>92,768</h1>
+                    <p>Assets Issued</p>
+                </div>
+                <div class="img1  text1">
+                    <h1>232</h1>
+                    <p> Projects Incubated per Year</p>
+                </div>
+            </div>
+            <div class="middleimg">
+                <div class="img2 text1">
+                    <h1>4,828</h1>
+                    <p>Hackathons Worldwide</p>
+                </div>
+                <div style="height: 40vh;" class="img2"><img style="height: 40vh;"
+                        src="https://static.bnbchain.org/home-ui/static/images/new-home/builder/b2.png" alt=""></div>
+            </div>
+            <div class="rightimg">
+                <img id="i3" src="https://static.bnbchain.org/home-ui/static/images/new-home/builder/b3.png" alt="">
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+     
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>2B+</h3>
+                    <p>Total Transactions</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1,400+</h3>
+                    <p>Active dApps</p>
+                </div>
+                <div class="stat-item">
+                    <h3>163M+</h3>
+                    <p>Unique Addresses</p>
+                </div>
+                <div class="stat-item">
+                    <h3>$68B+</h3>
+                    <p>Total Value Locked</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="container">
+            <h2 class="section-title">BNB Chain Ecosystem</h2>
+            <p class="section-subtitle">Discover the diverse range of applications built on BNB Chain across DeFi, NFTs,
+                Gaming, and more.</p>
+            <div class="ecosystem-grid">
+                <div class="ecosystem-card">
+                    <div class="ecosystem-img"><img id="defi"
+                            src="https://dex-bin.bnbstatic.com/static/dapp-uploads/O6j-gZp80QCa524NkHfpf" alt=""></div>
+                    <div class="ecosystem-content">
+                        <h3>DeFi</h3>
+                        <p>Leading decentralized exchanges, lending protocols, and yield farming platforms.</p>
+                        <a href="ecosystem.html#defi">Explore →</a>
+                    </div>
+                </div>
+                <div class="ecosystem-card">
+                    <div class="ecosystem-img"><img id="defi"
+                            src="https://cms-static.bnbchain.org/dcms/static/303d0c6a-af8f-4098-a2d0-a5b96ef964ba.png"
+                            alt=""></div>
+                    <div class="ecosystem-content">
+                        <h3>NFTs</h3>
+                        <p>Marketplaces, gaming assets, and digital art collections on BNB Chain.</p>
+                        <a href="ecosystem.html#nfts">Explore →</a>
+                    </div>
+                </div>
+                <div class="ecosystem-card">
+                    <div class="ecosystem-img"><img id="defi"
+                            src="https://cms-static.bnbchain.org/dcms/static/91af5e6c-4ad5-42e2-92fb-4d29920d2963.png"
+                            alt=""></div>
+                    <div class="ecosystem-content">
+                        <h3>Gaming</h3>
+                        <p>Play-to-earn games and metaverse experiences with real economic value.</p>
+                        <a href="ecosystem.html#gaming">Explore →</a>
+                    </div>
+                </div>
+                <div class="ecosystem-card">
+                    <div class="ecosystem-img"><img id="defi"
+                            src="https://cms-static.bnbchain.org/dcms/static/48d2b530-ec55-4ece-b57a-132ad9c5058e.png"
+                            alt=""></div>
+                    <div class="ecosystem-content">
+                        <h3>Tools</h3>
+                        <p>Wallets, explorers, and developer tools to enhance your BNB Chain experience.</p>
+                        <a href="ecosystem.html#tools">Explore →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>BNB Chain</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="ecosystem.html">Ecosystem</a></li>
+                        <li><a href="developers.html">Developers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Developers</h4>
+                    <ul class="footer-links">
+                        <li><a href="developers.html#docs">Documentation</a></li>
+                        <li><a href="developers.html#tools">Tools</a></li>
+                        <li><a href="developers.html#grants">Grants</a></li>
+                        <li><a href="developers.html#support">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Community</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Telegram</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 BNB Chain. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+         
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

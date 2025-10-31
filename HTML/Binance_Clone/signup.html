@@ -11,38 +11,156 @@
   <link rel="stylesheet" href="styles.css">
 
   <style>
+body {
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px 15px;
+    margin: 0;
+}
+
+.signup-box {
+    background: #1e1e1e;
+    padding: clamp(1.5rem, 5vw, 2.5rem);
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    width: 100%;
+    max-width: min(400px, 90vw);
+    margin-top: clamp(20px, 8vh, 50px);
+    margin-bottom: 20px;
+}
+
+.signup-box h3 {
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
+    margin-bottom: clamp(1rem, 3vw, 1.5rem);
+    text-align: center;
+}
+
+.signup-box .form-label {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.signup-box .form-control {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    padding: clamp(0.75rem, 2vw, 1rem);
+}
+
+.or-divider {
+    margin: clamp(1rem, 3vw, 1.5rem) 0;
+    text-align: center;
+    color: #bbb;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.social-btn {
+    background: #2c2c2c;
+    color: #fff;
+    border: none;
+    transition: background 0.3s;
+    padding: clamp(0.75rem, 2vw, 1rem);
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-btn:hover {
+    background: #3a3a3a;
+}
+
+.social-btn i {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.btn-login {
+    padding: clamp(0.75rem, 2vw, 1rem);
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    width: 100%;
+}
+
+@media (max-width: 480px) {
     body {
-      background-color: #121212;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+        padding: 15px 10px;
+        align-items: flex-start;
     }
+    
     .signup-box {
-      background: #1e1e1e;
-      padding: 2.5rem;
-      border-radius: 1rem;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
-      width: 100%;
-      max-width: 400px;
-       
-      margin-top: 50px;
+        padding: 1.25rem;
+        border-radius: 0.75rem;
+        margin-top: 10px;
     }
-    .or-divider {
-      margin: 1.5rem 0;
-      text-align: center;
-      color: #bbb;
-    }
+    
     .social-btn {
-      background: #2c2c2c;
-      color: #fff;
-      border: none;
-      transition: background 0.3s;
+        margin-bottom: 8px;
     }
-    .social-btn:hover {
-      background: #3a3a3a;
+}
+
+@media (max-width: 360px) {
+    .signup-box {
+        padding: 1rem;
+        border-radius: 0.5rem;
     }
+    
+    .social-btn {
+        padding: 0.6rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 40px 20px;
+        align-items: center;
+    }
+    
+    .signup-box {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .signup-box {
+        max-width: 450px;
+        padding: 3rem;
+    }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+    body {
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+    
+    .signup-box {
+        margin-top: 10px;
+        padding: 1rem;
+    }
+}
+
+.form-control {
+    height: auto;
+    min-height: 44px;
+}
+
+.form-control:focus,
+.social-btn:focus,
+.btn-login:focus {
+    outline: 2px solid #f0b90b;
+    outline-offset: 2px;
+}
+
+.social-btn:disabled,
+.btn-login:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
   </style>
 </head>
 
