@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Gemini</title>
+    <link rel="icon" type="image/jpg" href="https://thegivingblock.com/wp-content/uploads/2021/12/Gemini-600px.png">
+    <link rel="stylesheet" href="register.css">
+   
+</head>
+
+<body>
+    <div class="left">
+        <a href="index.html"><img id="logo" src="https://thegivingblock.com/wp-content/uploads/2021/12/Gemini-600px.png" alt="Gemini Logo"></a>
+        <img id="back"
+            src="https://images.ctfassets.net/jg6lo9a2ukvr/26IxWKbw8s9XMD1VEJZE0E/da2cb5d77fd934bf73b9ddbbc27af199/Getting_started_EU.png"
+            alt="Background">
+    </div>
+    <div class="right">
+        <div id="sign"><p><a href="login.html">Sign in</a></p></div>
+        <div class="form-container">
+            <h1>Create your account</h1>
+            <div class="business">
+                <div class="inter"><p>Business</p></div>
+                <div class="personal">
+                    <p>Personal</p>
+                </div>
+            </div>
+
+            <form id="register-form">
+
+                <div class="form-group">
+
+                    <input type="email" id="email" name="email" placeholder="Email address" >
+
+                </div>
+
+                <div class="form-group">
+
+                    <input type="password" id="password" name="password" placeholder="Password">
+
+                </div>
+                <div class="country">
+
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I agree to Gemini's <a href="#">Privacy Policy</a> and user agreements for <a
+                            href="#">E-Money</a> and <a href="#">Virtual Asset</a> services.</label>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Gemini may send me occasional promotional emails.</label>
+                </div>
+
+                <button type="submit" class="btn"><a href="index.html">Create Account</a></button>
+            </form>
+
+
+        </div>
+    </div>
+
+ <div class="captcha">
+        <div class="au"><img id="reCAPTCHA" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMjQ0IiB2aWV3Qm94PSIwIDAgMjU2IDI0NCI+PHBhdGggZmlsbD0iIzFjM2FhOSIgZD0iTTIxMS4zIDg0Ljk2NmE4NyA4NyAwIDAgMC0uMDg3LTMuNjUzVjEyLjI1MWwtMTkuMDkyIDE5LjA5M0MxNzYuNDk0IDEyLjIxNyAxNTIuNzIzIDAgMTI2LjA5NiAwQzk4LjM4NyAwIDczLjc3IDEzLjIyNiA1OC4yMSAzMy43MWwzMS4yOTUgMzEuNjI0YTQxLjQ2IDQxLjQ2IDAgMCAxIDEyLjY3Ny0xNC4yMjRjNS40NjQtNC4yNjMgMTMuMjA1LTcuNzUgMjMuOTE0LTcuNzVjMS4yOTQgMCAyLjI5My4xNTIgMy4wMjYuNDM2YzEzLjI2OSAxLjA0OCAyNC43NyA4LjM3IDMxLjU0MSAxOC45OThMMTM4LjUxIDg0Ljk0NmMyOC4wNTktLjExIDU5Ljc1Ni0uMTc0IDcyLjc4OC4wMTUiLz48cGF0aCBmaWxsPSIjNDI4NWY0IiBkPSJNMTI1LjU5OS4wMDNhODcgODcgMCAwIDAtMy42NTMuMDg3SDUyLjg4NGwxOS4wOTMgMTkuMDkzQzUyLjg1IDM0LjgwOSA0MC42MzMgNTguNTgxIDQwLjYzMyA4NS4yMDdjMCAyNy43MSAxMy4yMjYgNTIuMzI3IDMzLjcxIDY3Ljg4OGwzMS42MjQtMzEuMjk1YTQxLjQ2IDQxLjQ2IDAgMCAxLTE0LjIyNC0xMi42NzhjLTQuMjYzLTUuNDYzLTcuNzUtMTMuMjA1LTcuNzUtMjMuOTE0YzAtMS4yOTMuMTUyLTIuMjkyLjQzNi0zLjAyNmMxLjA0OC0xMy4yNjggOC4zNy0yNC43NjkgMTguOTk4LTMxLjU0bDIyLjE1MiAyMi4xNTJjLS4xMS0yOC4wNi0uMTc1LTU5Ljc1Ny4wMTUtNzIuNzg5Ii8+PHBhdGggZmlsbD0iI2FiYWJhYiIgZD0iTTQwLjYzNiA4NS4yMDVxLjAwNSAxLjgzNS4wODcgMy42NTN2NjkuMDYybDE5LjA5My0xOS4wOTNjMTUuNjI2IDE5LjEyNyAzOS4zOTggMzEuMzQ0IDY2LjAyNCAzMS4zNDRjMjcuNzEgMCA1Mi4zMjctMTMuMjI2IDY3Ljg4OC0zMy43MWwtMzEuMjk1LTMxLjYyNGE0MS40NiA0MS40NiAwIDAgMS0xMi42NzggMTQuMjI0Yy01LjQ2MyA0LjI2My0xMy4yMDUgNy43NS0yMy45MTQgNy43NWMtMS4yOTMgMC0yLjI5Mi0uMTUyLTMuMDI2LS40MzdjLTEzLjI2OC0xLjA0Ny0yNC43NjktOC4zNy0zMS41NC0xOC45OTdsMjIuMTUyLTIyLjE1M2MtMjguMDYuMTEtNTkuNzU3LjE3NS03Mi43ODktLjAxNCIvPjxwYXRoIGZpbGw9IiNhNmE2YTYiIGQ9Ik01NS4wMTMgMjAzLjE2OHEtMy4xMTMgMC01LjU4MiAxLjE4YTExLjYgMTEuNiAwIDAgMC00LjE4NyAzLjMwMnEtMS42OSAyLjE0Ny0yLjYwMyA1LjIwNnEtLjg4NiAzLjAzMy0uODg2IDYuNzl2Ny4yMnEwIDMuNzgzLjg4NiA2LjgxNnEuOTEyIDMuMDMyIDIuNTc3IDUuMThxMS42NjMgMi4xNDYgNC4wMjUgMy4zcTIuMzYxIDEuMTU1IDUuMzE0IDEuMTU1cTMuMDMzIDAgNS4zMTQtLjg4NnEyLjMwOC0uODg1IDMuODY0LTIuNTVxMS41NTctMS42OSAyLjM4OS00LjA3OXEuODU5LTIuMzg5IDEuMDItNS40MjFoLTQuOTY1cS0uMTg4IDIuMzM1LS42NDQgMy45OTlxLS40NTcgMS42MzctMS4zNDIgMi43MXEtLjg1OSAxLjA0Ny0yLjI1NSAxLjU1N3EtMS4zNjkuNDgzLTMuMzgxLjQ4M3EtMi4xNDcgMC0zLjY1LS45NHEtMS41MDMtLjk2NS0yLjQ0Mi0yLjYzcS0uOTEyLTEuNjY0LTEuMzQyLTMuODkxcS0uNDAzLTIuMjI3LS40MDMtNC44MDR2LTcuMjczcTAtMi43NjQuNDgzLTUuMDE5cS41MS0yLjI1NCAxLjUzLTMuODM3dDIuNTc3LTIuNDQzcTEuNTU2LS44ODUgMy43MDMtLjg4NXExLjc5OSAwIDMuMDg2LjUzN3ExLjI5LjUxIDIuMTQ3IDEuNjFxLjg2IDEuMDczIDEuMzE1IDIuNzM3cS40NTcgMS42NjQuNjE4IDMuOTcyaDQuOTY1cS0uMTM0LTMuMTY2LS45OTMtNS42MDlxLS44Ni0yLjQ0Mi0yLjM4OS00LjEwNnEtMS41My0xLjY2NC0zLjczLTIuNTIzcS0yLjE3NC0uODU4LTUuMDE5LS44NTltMTIxLjIgMHEtMy4xMTQgMC01LjU4MyAxLjE4YTExLjYgMTEuNiAwIDAgMC00LjE4NyAzLjMwMnEtMS42OSAyLjE0Ny0yLjYwMyA1LjIwNnEtLjg4NSAzLjAzMy0uODg1IDYuNzl2Ny4yMnEwIDMuNzgzLjg4NSA2LjgxNnEuOTEyIDMuMDMyIDIuNTc3IDUuMThxMS42NjMgMi4xNDYgNC4wMjUgMy4zcTIuMzYyIDEuMTU1IDUuMzE0IDEuMTU1cTMuMDMzIDAgNS4zMTQtLjg4NnEyLjMwOC0uODg1IDMuODY1LTIuNTVxMS41NTUtMS42OSAyLjM4OC00LjA3OXEuODYtMi4zODkgMS4wMi01LjQyMWgtNC45NjVxLS4xODggMi4zMzUtLjY0NCAzLjk5OXEtLjQ1NiAxLjYzNy0xLjM0MiAyLjcxcS0uODU5IDEuMDQ3LTIuMjU0IDEuNTU3cS0xLjM3LjQ4My0zLjM4Mi40ODNxLTIuMTQ3IDAtMy42NS0uOTRxLTEuNTAzLS45NjUtMi40NDItMi42M3EtLjkxMi0xLjY2NC0xLjM0Mi0zLjg5MXEtLjQwMi0yLjIyNy0uNDAyLTQuODA0di03LjI3M3EwLTIuNzY0LjQ4My01LjAxOXEuNTEtMi4yNTQgMS41My0zLjgzN3QyLjU3Ni0yLjQ0M3ExLjU1Ny0uODg1IDMuNzAzLS44ODVxMS44IDAgMy4wODcuNTM3cTEuMjg3LjUxIDIuMTQ3IDEuNjFxLjg1OCAxLjA3MyAxLjMxNSAyLjczN3QuNjE3IDMuOTcyaDQuOTY1cS0uMTM0LTMuMTY2LS45OTMtNS42MDlxLS44Ni0yLjQ0Mi0yLjM4OS00LjEwNnEtMS41My0xLjY2NC0zLjczLTIuNTIzcS0yLjE3NC0uODU4LTUuMDE5LS44NTltLTkyLjkxMS41MzdMNzAuNzE1IDI0Mi43OGg1LjA0NWwzLjAzMy0xMC4xOTloMTMuMjA0bDMuMDg2IDEwLjE5OWg1LjA0NmwtMTIuNjE0LTM5LjA3NXptMjIuMTQgMHYzOS4wNzVoNC45MTFWMjI3LjQ4aDcuNTQxcTIuODE4IDAgNC45OTItLjc3OHEyLjE3NC0uODA1IDMuNjUtMi4zMDhxMS41MDMtMS41MDMgMi4yNTQtMy43MDRxLjc4LTIuMjI3Ljc3OS01LjA0NXEwLTIuNjA0LS43NzktNC43NzdxLS43NS0yLjIwMS0yLjIyNy0zLjc4NHEtMS40NzYtMS42MTEtMy42NzctMi40OTZxLTIuMTc0LS44ODYtNC45OTItLjg4NnptMjcuODg0IDB2NC4yNGgxMC4yNTJ2MzQuODM1aDQuOTF2LTM0LjgzNWgxMC4yOHYtNC4yNHptNjEuNjQ2IDB2MzkuMDc1aDQuOTF2LTE4LjA2MmgxNS43Mjh2MTguMDYyaDQuOTM4di0zOS4wNzVoLTQuOTM4djE2LjhoLTE1LjcyN3YtMTYuOHptNDQuMiAwbC0xMi41ODYgMzkuMDc1aDUuMDQ2bDMuMDMyLTEwLjE5OWgxMy4yMDRsMy4wODcgMTAuMTk5SDI1NmwtMTIuNjE0LTM5LjA3NXptLTEyOC44MiA0LjI0aDcuNTQycTEuNzk4IDAgMy4wNi42NDRxMS4yODcuNjQ1IDIuMDkzIDEuNzE4YTYuOSA2LjkgMCAwIDEgMS4yMDcgMi40OTVxLjQwMyAxLjM5NS40MDMgMi44OTlxMCAxLjY2NC0uNDAzIDMuMDZhNi40IDYuNCAwIDAgMS0xLjIwNyAyLjM4OHEtLjgwNi45OTMtMi4wOTQgMS41NTZxLTEuMjYuNTY0LTMuMDYuNTY0aC03LjU0em0tMjQuOTU4IDIuNjNsNS4zNDEgMTcuNzY2SDgwLjA4MXptMTU1Ljg3MiAwbDUuMzQgMTcuNzY2aC0xMC42NTR6bS0yMzEuMTc1IDIuNjNxLTEuODUzIDAtMy4xOTQuOTRxLTEuMzE1Ljk0LTIuMiAyLjU0OWwtLjA4MS0yLjk1MkgwdjI5LjAzOGg0Ljc1di0yMC43NzNxLjY3Mi0xLjg1MiAxLjkwNi0yLjkyNXExLjI2LTEuMDc0IDMuMTkzLTEuMDc0cS42MTggMCAxLjEuMDU0cS40ODUuMDI2IDEuMDQ3LjEzNGwtLjAyNi00LjYxNmExLjYgMS42IDAgMCAwLS4zNS0uMTA4YTMgMyAwIDAgMC0uNDgyLS4xMzRhNSA1IDAgMCAwLS41NjQtLjA4YTIuNSAyLjUgMCAwIDAtLjQ4My0uMDU0em0xNS45NjggMHEtMi4wNjYgMC0zLjk5OS43MjVxLTEuOTMyLjcyNS0zLjQzNSAyLjM4OHEtMS40NzYgMS42MzgtMi4zODggNC4yOTRxLS45MTMgMi42MzEtLjkxMyA2LjQ2OHYzLjI3NHEwIDMuMzI4Ljc3OSA1Ljc3cS43NzcgMi40NDMgMi4yMjcgNC4wNTNhOS4yIDkuMiAwIDAgMCAzLjU3IDIuMzYycTIuMDkyLjc3OCA0LjY5Ni43NzhxMS44NzggMCAzLjM1NS0uMzc2cTEuNTAyLS4zNzUgMi42NTctLjk2NmE5LjMgOS4zIDAgMCAwIDEuOTg2LTEuMzk1YTEwLjcgMTAuNyAwIDAgMCAxLjQyMi0xLjYxbC0yLjQ2OS0zLjAwNnEtLjU5LjcyNS0xLjI2MSAxLjM0MXEtLjY3Mi41OTEtMS40NzYgMS4wNDdhNy43IDcuNyAwIDAgMS0xLjc3Mi42NzFhOSA5IDAgMCAxLTIuMTczLjI0MnEtMy4zMDIgMC01LjA3My0yLjEycS0xLjc0NC0yLjEyLTEuNzQ0LTYuNzl2LS42NzJoMTYuMjF2LTIuNzY0cTAtMy4zMjgtLjU2NC01Ljg3N3QtMS43OTgtNC4yOTRhNy44IDcuOCAwIDAgMC0zLjE2Ny0yLjYzcS0xLjkzMi0uOTEzLTQuNjctLjkxM20wIDQuMDhxMS41NTcgMCAyLjU3Ny41NjNhNC4xNSA0LjE1IDAgMCAxIDEuNjEgMS41ODNxLjYxNyAxLjAyLjg4NiAyLjQ0M3EuMjk1IDEuMzk1LjM3NSAzLjA4NnYuNjQ0SDIwLjA3NHEuMTA4LTIuNDQyLjU5LTQuMDUzcS40ODQtMS42MSAxLjI2Mi0yLjU0OXEuODA1LS45NjYgMS44NTItMS4zNDJhNi43IDYuNyAwIDAgMSAyLjI4MS0uMzc2Ii8+PC9zdmc+" alt="">
+        </div>
+        <div class="bg">
+            <p id="up">protected by reCAPTCHA</p>
+            <p id="dw">Privacy-Terms</p>
+        </div>
+    </div>
+</body>
+</html>

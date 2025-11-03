@@ -1,0 +1,238 @@
+ * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #logo {
+            width: 35px;
+            height: 35px;
+            margin: 3vw;
+            position: absolute;
+            z-index: 10;
+        }
+
+        #back {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .left {
+            width: 50vw;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .right {
+            width: 50vw;
+            /* padding: 40px 60px; */
+            overflow-y: auto;
+            background-color: #fff;
+        }
+        #sign{
+            display: flex;
+            justify-content: end;
+            margin: 2vw;
+        }
+        #sign p{ 
+            font-weight: bold;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+
+        .form-container {
+            max-width: 500px;
+            /* margin: 0 auto; */
+            margin-top: 10vw;
+            margin-left: 7vw;
+        }
+
+        h1 {
+            font-size: 35px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: border-color 0.9s;
+        }
+
+
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: black;
+            outline: none;
+            border: 2px solid;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group input {
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+
+        .checkbox-group label {
+            font-size: 14px;
+            line-height: 1.4;
+            font-weight: 100;
+            color: #757575;
+        }
+
+        .checkbox-group a {
+            color: grey;
+            font-weight: normal;
+            text-decoration: underline;
+
+        }
+        .business{
+            display: flex;
+            width: 33.6vw;
+            background-color: #eeeeee;
+            padding: 12px 15px;
+            margin-bottom: 2vw;
+            border-radius: 30px;
+            justify-content: end;
+            align-items: center;
+        }
+        .inter{
+              margin-right: 5vw;
+        }
+        .inter p{
+            
+            font-weight: bold;
+        }
+        .personal{
+            position: absolute;
+            display: flex;
+            width: 14vw;
+            background-color: #dddddd;
+            padding: 8px;
+            border-radius: 30px;
+            margin-right: 19vw;
+            justify-content: center;
+        }
+        .personal p{
+            
+            font-weight: bold;
+        }
+
+
+        .btn {
+            padding: 14px;
+            background-color: orange;
+            color: black;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn a{
+            color: black;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: rgb(202, 131, 0);
+        }
+
+
+        @media (max-width: 768px) {
+            .left {
+                display: none;
+            }
+
+        }
+        .captcha{ 
+              margin-top: 600px;
+            margin-bottom: 2vw;
+            display: flex;
+            color: white;
+            position: absolute ;
+            right: 0;
+             
+
+        }
+         .captcha .bg {
+    background-color: rgb(36, 83, 253);
+    opacity: 0;
+    transform: translateX(20px); /* start slightly right */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    justify-content: center;
+    flex-direction: column; 
+    padding: 5px 10px;
+    pointer-events: none; /* avoid blocking hover */
+}
+
+/* when active/hovered */
+.captcha:hover .bg {
+    opacity: 1;
+    display: flex;
+    transform: translateX(0px);
+    pointer-events: auto;
+}
+        #reCAPTCHA{
+            padding: 5px;
+            width: 60px;
+            height: 60px;
+
+        }
+        .bg{
+            background-color: rgb(36, 83, 253);
+            display: none;
+            justify-content: center;
+            flex-direction: column;
+            
+        }
+        .au{
+            box-shadow: 4px 4px 20px gray;
+             border-top-left-radius: 0.5vw;
+             border-bottom-left-radius: 0.5vw;
+        }
+        #up {
+            font-size: 1vw;
+            margin-left: 5px;
+        }
+        #dw{
+            font-size: 0.8vw;
+            margin-left: 40px;
+            margin-top: 5px;
+        }

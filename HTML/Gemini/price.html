@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Prices</title>
+    <link rel="icon" type="image/jpg" href="https://thegivingblock.com/wp-content/uploads/2021/12/Gemini-600px.png">
+    <link rel="stylesheet" href="price.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo"><a href="index.html"><img style="width: 9vw;"
+                    src="https://www.gemini.com/_next/image?url=%2Fstatic%2Fimages%2Fgemini-hor-light-full-rgb%403x.png&w=128&q=75"
+                    alt=""></a></div>
+
+        <div class="navmenu">
+            <div class="drdown">
+                <a href="#">Prices</a>
+            </div>
+            <div class="drdown">
+                <a href="#">All Products</a>
+                <div class="dropdown-content">
+                    <div class="left-img">
+                        <img
+                            src="https://www.gemini.com/_next/image?url=%2Fimages%2Fderivatives%2FderivativesBg.png&w=384&q=75">
+                        <p>ActiveTrader</p>
+                        <span>Advanced trading platform</span>
+                    </div>
+
+                    <div class="menu-items">
+                        <h3>Exchange</h3>
+                        <p>Buy, sell, and store bitcoin and 70+ cryptos</p>
+
+                        <h3>Tokenized Stocks</h3>
+                        <p>Trade U.S. stocks on the blockchain</p>
+
+                        <h3>Gemini Dollar</h3>
+                        <p>Our USD-backed stablecoin</p>
+                    </div>
+                    <div class="menu-items">
+                        <h3>ActiveTrader</h3>
+                        <p>Advanced trading platform</p>
+
+                        <h3>Staking</h3>
+                        <p>Receive up to 4.42% APR on your crypto</p>
+                    </div>
+                </div>
+            </div>
+            <div class="drdown">
+                <a href="#">Institutions</a>
+                <div class="dropdown-content">
+                    <div style="margin-bottom: 5.7vw; margin-top: 5.7vw;" class="left-img">
+                        <img   
+                            src="https://www.gemini.com/_next/image?url=%2Fimages%2FinstitutionsMenu.png&w=384&q=75">
+                        <p>Gemini Institutional</p>
+                        <span id="sp">Secure crypto-native solutions for</span><br>
+                        <span id="sp">institutional investors, businesses, private</span><br>
+                        <span id="sp">clients, and fintechs</span>
+                    </div>
+
+                    <div style="margin-bottom: 5.7vw; margin-top: 5.7vw;" class="menu-items">
+                        <h3>Exchange</h3>
+                        <p>Buy, sell, and store crypto for institutions</p>
+
+                        <h3>Custody</h3>
+                        <p>Institutional-grade crypto cold storage</p>
+
+                        <h3>OTC</h3>
+                        <p>A full service crypto solution for institutions</p>
+
+                        <h3>Staking</h3>
+                        <p>Receive up to 4.42% APR on your crypto</p>
+                    </div>
+                    <div style="margin-bottom: 5.7vw; margin-top: 5.7vw;" class="menu-items">
+                        <h3>Businesses and Private </h3><br><br>
+                        <h3>Professional Traders</h3><br><br>
+                        <h3>Institutional Investors</h3><br><br>
+                        <h3>Fintechs and Banks</h3><br><br>
+                        <h3>Bitcoin Miners</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="drdown">
+                <a href="#">Resources</a>
+                <div class="dropdown-content">
+                    <div style="margin-bottom: 8.3vw; margin-top: 8.3vw;" class="left-img">
+                        <img
+                            src="https://www.gemini.com/_next/image?url=%2Fimages%2FresourceBg.png&w=384&q=75">
+                        <p>Gemini Blog</p>
+                        <span id="sp">The latest product news, company</span><br>
+                        <span id="sp"> updates, and industry perspectives</span>
+                    </div>
+
+                    <div style="margin-bottom: 8.3vw; margin-top: 8.3vw;" class="menu-items">
+                        <h3>Trust Center</h3>
+                        <p>Building trust through transparency</p>
+
+                        <h3>About</h3>
+                        <p>We're unlocking the next era of financial, <br>
+                           creative, and personal freedom</p>
+
+                        <h3>Careers</h3>
+                        <p>Join our mission</p>
+                    </div>
+                    <div style="margin-bottom: 8.3vw; margin-top: 8.3vw;" class="menu-items">
+                        <h3>Cryptopedia</h3>
+                        <p>Your trusted source for all things crypto</p>
+
+                        <h3>Support</h3>
+                        <p>Get help and find answers to your questions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbtn">
+            <a href="login.html">Sign in &nbsp;</a>
+            <a id="gets" href="register.html">Get started</a>
+        </div>
+    </div>
+
+    <main class="prices-container">
+         <section class="hero-section">
+            <h1 class="hero-title">Explore Crypto and</h1>
+            <h1 class="hero-title"> Tokenized Stocks Prices</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Search for assets" class="search-input">
+            </div>
+        </section>
+ 
+        <section class="featured-section">
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <h3 class="featured-title">Trending tokens</h3>
+                    <div class="featured-items">
+                        <a href="#" class="featured-item">
+                            <img src="https://www.gemini.com/images/currencies/icons/circle/btc.svg" alt="Bitcoin" class="featured-icon">
+                            <div class="featured-details">
+                                <div class="featured-name">Bitcoin</div>
+                                <div class="featured-price">
+                                    $107,373.25 • 
+                                    <span class="featured-change negative">-2.66%</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="featured-item">
+                            <img src="https://www.gemini.com/images/currencies/icons/circle/eth.svg" alt="Ether" class="featured-icon">
+                            <div class="featured-details">
+                                <div class="featured-name">Ether</div>
+                                <div class="featured-price">
+                                    $3,719.02 • 
+                                    <span class="featured-change negative">-4.30%</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="featured-item">
+                            <img src="https://www.gemini.com/images/currencies/icons/circle/xrp.svg" alt="XRP" class="featured-icon">
+                            <div class="featured-details">
+                                <div class="featured-name">XRP</div>
+                                <div class="featured-price">
+                                    $2.4159 • 
+                                    <span class="featured-change negative">-3.71%</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="featured-card">
+                    <h3 class="featured-title">Top movers</h3>
+                    <div class="featured-items">
+                        <a href="#" class="featured-item">
+                            <img src="https://www.gemini.com/images/currencies/icons/circle/op.svg" alt="Optimism" class="featured-icon">
+                            <div class="featured-details">
+                                <div class="featured-name">Optimism</div>
+                                <div class="featured-price">
+                                    $8.42 • 
+                                    <span class="featured-change positive">+11.23%</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="featured-item">
+                            <img src="https://www.gemini.com/images/currencies/icons/circle/gmt.svg" alt="GMT" class="featured-icon">
+                            <div class="featured-details">
+                                <div class="featured-name">GMT</div>
+                                <div class="featured-price">
+                                    $0.85 • 
+                                    <span class="featured-change positive">+16.45%</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="featured-item">
+                            <img src="https://www.gemini.com/images/currencies/icons/circle/bonk.svg" alt="Bonk" class="featured-icon">
+                            <div class="featured-details">
+                                <div class="featured-name">Bonk</div>
+                                <div class="featured-price">
+                                    $0.000023 • 
+                                    <span class="featured-change negative">-4.17%</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="featured-card">
+                    <h3 class="featured-title">New on Gemini</h3>
+                    <div class="featured-items">
+                        <a href="#" class="featured-item">
+                            <img src="https://www.gemini.com/images/currencies/icons/circle/wld.svg" alt="Worldcoin" class="featured-icon">
+                            <div class="featured-details">
+                                <div class="featured-name">Worldcoin</div>
+                                <div class="featured-price">
+                                    $12.45 • 
+                                    <span class="featured-change positive">+10.96%</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="featured-item">
+                            <img src="https://www.gemini.com/images/currencies/icons/circle/drift.svg" alt="Drift" class="featured-icon">
+                            <div class="featured-details">
+                                <div class="featured-name">Drift</div>
+                                <div class="featured-price">
+                                    $3.78 • 
+                                    <span class="featured-change positive">+13.51%</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="featured-item">
+                            <img src="https://www.gemini.com/images/currencies/icons/circle/2z.svg" alt="2Z" class="featured-icon">
+                            <div class="featured-details">
+                                <div class="featured-name">2Z</div>
+                                <div class="featured-price">
+                                    $0.56 • 
+                                    <span class="featured-change negative">-5.08%</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <section class="assets-section">
+            <div class="assets-header">
+                <div class="assets-info">
+                    <span class="section-title">Crypto and Tokenized Stocks</span>
+                    <span class="assets-count">292 assets</span>
+                </div>
+                <div class="assets-controls">
+                    <div class="filter-tab active">
+                        <span>All assets</span>
+                    </div>
+                    <div class="dropdown-control">
+                        <span>Show 10</span>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="assets-table">
+                <div class="table-header">
+                    <div class="table-row">
+                        <div class="col-asset">Asset</div>
+                        <div class="col-price">Price</div>
+                        <div class="col-change">24hr Change</div>
+                        <div class="col-percent">% Change</div>
+                        <div class="col-marketcap">Market Cap</div>
+                    </div>
+                </div>
+                <div class="table-body">
+                    <div class="table-row">
+                        <div class="col-asset">
+                            <div class="asset-info">
+                                <img src="https://www.gemini.com/images/currencies/icons/circle/nvda.svg" alt="NVIDIA" class="asset-icon">
+                                <div class="asset-details">
+                                    <div class="asset-name">NVIDIA</div>
+                                    <div class="asset-symbol">NVDAUSD</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price price-value">$950.42</div>
+                        <div class="col-change change-value positive">+$12.35</div>
+                        <div class="col-percent percent-value positive">+1.32%</div>
+                        <div class="col-marketcap marketcap-value">$2.34T</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col-asset">
+                            <div class="asset-info">
+                                <img src="https://www.gemini.com/images/currencies/icons/circle/aapl.svg" alt="Apple" class="asset-icon">
+                                <div class="asset-details">
+                                    <div class="asset-name">Apple</div>
+                                    <div class="asset-symbol">AAPLUSD</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price price-value">$218.67</div>
+                        <div class="col-change change-value negative">-$2.45</div>
+                        <div class="col-percent percent-value negative">-1.11%</div>
+                        <div class="col-marketcap marketcap-value">$3.42T</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col-asset">
+                            <div class="asset-info">
+                                <img src="https://www.gemini.com/images/currencies/icons/circle/msft.svg" alt="Microsoft" class="asset-icon">
+                                <div class="asset-details">
+                                    <div class="asset-name">Microsoft</div>
+                                    <div class="asset-symbol">MSFTUSD</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price price-value">$452.89</div>
+                        <div class="col-change change-value positive">+$3.67</div>
+                        <div class="col-percent percent-value positive">+0.82%</div>
+                        <div class="col-marketcap marketcap-value">$3.36T</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col-asset">
+                            <div class="asset-info">
+                                <img src="https://www.gemini.com/images/currencies/icons/circle/btc.svg" alt="Bitcoin" class="asset-icon">
+                                <div class="asset-details">
+                                    <div class="asset-name">Bitcoin</div>
+                                    <div class="asset-symbol">BTCUSD</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price price-value">$107,373.25</div>
+                        <div class="col-change change-value negative">-$2,909.12</div>
+                        <div class="col-percent percent-value negative">-2.66%</div>
+                        <div class="col-marketcap marketcap-value">$2.146T</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col-asset">
+                            <div class="asset-info">
+                                <img src="https://www.gemini.com/images/currencies/icons/circle/eth.svg" alt="Ether" class="asset-icon">
+                                <div class="asset-details">
+                                    <div class="asset-name">Ether</div>
+                                    <div class="asset-symbol">ETHUSD</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price price-value">$3,719.02</div>
+                        <div class="col-change change-value negative">-$167.25</div>
+                        <div class="col-percent percent-value negative">-4.30%</div>
+                        <div class="col-marketcap marketcap-value">$446.28B</div>
+                    </div>
+                
+                <div class="table-body">
+                    <div class="table-row">
+                        <div class="col-asset">
+                            <div class="asset-info">
+                                <img src="https://www.gemini.com/images/currencies/icons/circle/googl.svg" alt="NVIDIA" class="asset-icon">
+                                <div class="asset-details">
+                                    <div class="asset-name">Alphabet Inc. Class A Common Stock</div>
+                                    <div class="asset-symbol">NVDAUSD</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price price-value">$950.42</div>
+                        <div class="col-change change-value positive">+$12.35</div>
+                        <div class="col-percent percent-value positive">+1.32%</div>
+                        <div class="col-marketcap marketcap-value">$2.34T</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col-asset">
+                            <div class="asset-info">
+                                <img src="https://www.gemini.com/images/currencies/icons/circle/amzn.svg" alt="Apple" class="asset-icon">
+                                <div class="asset-details">
+                                    <div class="asset-name">Amazon.Com Inc</div>
+                                    <div class="asset-symbol">AAPLUSD</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price price-value">$218.67</div>
+                        <div class="col-change change-value negative">-$2.45</div>
+                        <div class="col-percent percent-value negative">-1.11%</div>
+                        <div class="col-marketcap marketcap-value">$3.42T</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col-asset">
+                            <div class="asset-info">
+                                <img src="https://www.gemini.com/images/currencies/icons/circle/avgo.svg" alt="Microsoft" class="asset-icon">
+                                <div class="asset-details">
+                                    <div class="asset-name">Broadcom Inc.</div>
+                                    <div class="asset-symbol">MSFTUSD</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price price-value">$452.89</div>
+                        <div class="col-change change-value positive">+$3.67</div>
+                        <div class="col-percent percent-value positive">+0.82%</div>
+                        <div class="col-marketcap marketcap-value">$3.36T</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col-asset">
+                            <div class="asset-info">
+                                <img src="https://www.gemini.com/images/currencies/icons/circle/meta.svg" alt="Bitcoin" class="asset-icon">
+                                <div class="asset-details">
+                                    <div class="asset-name">Meta Platforms, Inc.</div>
+                                    <div class="asset-symbol">BTCUSD</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price price-value">$107,373.25</div>
+                        <div class="col-change change-value negative">-$2,909.12</div>
+                        <div class="col-percent percent-value negative">-2.66%</div>
+                        <div class="col-marketcap marketcap-value">$2.146T</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col-asset">
+                            <div class="asset-info">
+                                <img src="https://www.gemini.com/images/currencies/icons/circle/tsla.svg" alt="Ether" class="asset-icon">
+                                <div class="asset-details">
+                                    <div class="asset-name">Tesla, Inc.</div>
+                                    <div class="asset-symbol">ETHUSD</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-price price-value">$3,719.02</div>
+                        <div class="col-change change-value negative">-$167.25</div>
+                        <div class="col-percent percent-value negative">-4.30%</div>
+                        <div class="col-marketcap marketcap-value">$446.28B</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <section class="disclaimer-section">
+            <p>The pricing data and asset descriptions are for general informational purposes only and are not investment advice. Buying, selling, and trading</p>
+            <p>cryptocurrency involves risks. Past performance is not a reliable indicator of future results. Full returns are not guaranteed; excluding trading fees and</p>
+            <p>changes in currency fluctuations, values change frequently, and past performance may not be repeated. For tokens not supported for trading on the</p>
+            <p>Gemini Exchange, pricing data is provided by CoinGecko, a third party data provider, with no affiliation to Gemini. For tokens that are supported for trading on the</p>
+            <p>Gemini Exchange, the prices quoted are provided directly by Gemini. Trading fees vary by product and order size. Please see our fee schedules here.</p>
+        </section>
+    </main>
+
+    <div class="footer">
+        <div class="top">
+            <div class="top1">
+                <div class="footimg"><img id="geminilogo"
+                        src="https://www.gemini.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgemini-hor-dark-full-rgb%403x.2a107208.png&w=128&q=75"
+                        alt=""></div>
+                <div class="stay">
+                    <p>Stay up to date</p>
+                </div>
+                <div class="email"><input type="email" placeholder="Email address"></div>
+                <div class="btn"><a href="register.html"><button>Subscribe</button></a></div>
+                <div class="social">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDAwIiBkPSJtMTcuNjg3IDMuMDYzbC00Ljk5NiA1LjcxMWwtNC4zMi01LjcxMUgyLjExMmw3LjQ3NyA5Ljc3NmwtNy4wODYgOC4wOTloMy4wMzRsNS40NjktNi4yNWw0Ljc4IDYuMjVoNi4xMDJsLTcuNzk0LTEwLjMwNGw2LjYyNS03LjU3MXptLTEuMDY0IDE2LjA2TDUuNjU0IDQuNzgyaDEuODAzbDEwLjg0NiAxNC4zNHoiLz48L3N2Zz4="
+                        alt="X">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZyBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMS41Ij48cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik0xMiAxNmE0IDQgMCAxIDAgMC04YTQgNCAwIDAgMCAwIDgiLz48cGF0aCBkPSJNMyAxNlY4YTUgNSAwIDAgMSA1LTVoOGE1IDUgMCAwIDEgNSA1djhhNSA1IDAgMCAxLTUgNUg4YTUgNSAwIDAgMS01LTVaIi8+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJtMTcuNSA2LjUxbC4wMS0uMDExIi8+PC9nPjwvc3ZnPg=="
+                        alt="Instagram">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDAwIiBkPSJNMTkgM2EyIDIgMCAwIDEgMiAydjE0YTIgMiAwIDAgMS0yIDJINWEyIDIgMCAwIDEtMi0yVjVhMiAyIDAgMCAxIDItMnptLS41IDE1LjV2LTUuM2EzLjI2IDMuMjYgMCAwIDAtMy4yNi0zLjI2Yy0uODUgMC0xLjg0LjUyLTIuMzIgMS4zdi0xLjExaC0yLjc5djguMzdoMi43OXYtNC45M2MwLS43Ny42Mi0xLjQgMS4zOS0xLjRhMS40IDEuNCAwIDAgMSAxLjQgMS40djQuOTN6TTYuODggOC41NmExLjY4IDEuNjggMCAwIDAgMS42OC0xLjY4YzAtLjkzLS43NS0xLjY5LTEuNjgtMS42OWExLjY5IDEuNjkgMCAwIDAtMS42OSAxLjY5YzAgLjkzLjc2IDEuNjggMS42OSAxLjY4bTEuMzkgOS45NHYtOC4zN0g1LjV2OC4zN3oiLz48L3N2Zz4="
+                        alt="Linkedin">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDAwIiBkPSJtMTAgMTVsNS4xOS0zTDEwIDl6bTExLjU2LTcuODNjLjEzLjQ3LjIyIDEuMS4yOCAxLjk5Yy4wNy44LjEgMS40OS4xIDIuMDlMMjIgMTJjMCAyLjE5LS4xNiAzLjgtLjQ0IDQuODNjLS4yNS45LS44MyAxLjQ4LTEuNzMgMS43M2MtLjQ3LjEzLTEuMzMuMjItMi42NS4yOGMtMS4zLjA3LTIuNDkuMS0zLjU5LjFMMTIgMTljLTQuMTkgMC02LjgtLjE2LTcuODMtLjQ0Yy0uOS0uMjUtMS40OC0uODMtMS43My0xLjczYy0uMTMtLjQ3LS4yMi0xLjEtLjI4LTEuOTljLS4wNy0uOC0uMS0xLjQ5LS4xLTIuMDlMMiAxMmMwLTIuMTkuMTYtMy44LjQ0LTQuODNjLjI1LS45LjgzLTEuNDggMS43My0xLjczYy40Ny0uMTMgMS4zMy0uMjIgMi42NS0uMjhjMS4zLS4wNyAyLjQ5LS4xIDMuNTktLjFMMTIgNWM0LjE5IDAgNi44LjE2IDcuODMuNDRjLjkuMjUgMS40OC44MyAxLjczIDEuNzMiLz48L3N2Zz4="
+                        alt="Youtube">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDAwIiBkPSJNMTAuNzUgMTMuMDRjMC0uNTctLjQ3LTEuMDQtMS4wNC0xLjA0cy0xLjA0LjQ3LTEuMDQgMS4wNGExLjA0IDEuMDQgMCAxIDAgMi4wOCAwbTMuMzQgMi4zN2MtLjQ1LjQ1LTEuNDEuNjEtMi4wOS42MXMtMS42NC0uMTYtMi4wOS0uNjFhLjI2LjI2IDAgMCAwLS4zOCAwYS4yNi4yNiAwIDAgMCAwIC4zOGMuNzEuNzEgMi4wNy43NyAyLjQ3Ljc3czEuNzYtLjA2IDIuNDctLjc3YS4yNi4yNiAwIDAgMCAwLS4zOGMtLjEtLjEtLjI3LS4xLS4zOCAwbS4yLTMuNDFjLS41NyAwLTEuMDQuNDctMS4wNCAxLjA0cy40NyAxLjA0IDEuMDQgMS4wNHMxLjA0LS40NyAxLjA0LTEuMDRTMTQuODcgMTIgMTQuMjkgMTIiLz48cGF0aCBmaWxsPSIjMDAwIiBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMHMxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMm01LjggMTEuMzNjLjAyLjE0LjAzLjI5LjAzLjQ0YzAgMi4yNC0yLjYxIDQuMDYtNS44MyA0LjA2cy01LjgzLTEuODItNS44My00LjA2YzAtLjE1LjAxLS4zLjAzLS40NGMtLjUxLS4yMy0uODYtLjc0LS44Ni0xLjMzYTEuNDU1IDEuNDU1IDAgMCAxIDIuNDctMS4wNWMxLjAxLS43MyAyLjQxLTEuMTkgMy45Ni0xLjI0bC43NC0zLjQ5Yy4wMS0uMDcuMDUtLjEzLjExLS4xNmMuMDYtLjA0LjEzLS4wNS4yLS4wNGwyLjQyLjUyYTEuMDQgMS4wNCAwIDEgMSAuOTMgMS41Yy0uNTYgMC0xLjAxLS40NC0xLjA0LS45OWwtMi4xNy0uNDZsLS42NiAzLjEyYzEuNTMuMDUgMi45LjUyIDMuOSAxLjI0YTEuNDU1IDEuNDU1IDAgMSAxIDEuNiAyLjM4Ii8+PC9zdmc+"
+                        alt="Redit">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDAwIiBkPSJNMTcuNjkyIDExLjEyNGE5IDkgMCAwIDAtLjMxNS0uMTQzYy0uMTg1LTMuNDE0LTIuMDUtNS4zNjgtNS4xODItNS4zODhoLS4wNDJjLTEuODczIDAtMy40MzEuOC00LjM5IDIuMjU1bDEuNzIyIDEuMTgxYy43MTYtMS4wODcgMS44NC0xLjMxOCAyLjY2OS0xLjMxOGguMDI4YzEuMDMxLjAwNiAxLjgxLjMwNiAyLjMxMy44OWMuMzY3LjQyNi42MTIgMS4wMTUuNzMzIDEuNzU3YTEzLjIgMTMuMiAwIDAgMC0yLjk2LS4xNDNjLTIuOTc3LjE3Mi00Ljg5MiAxLjkwOS00Ljc2MyA0LjMyMmMuMDY1IDEuMjIzLjY3NSAyLjI3NyAxLjcxNyAyLjk2NGMuODguNTgyIDIuMDE1Ljg2NiAzLjE5NC44MDJjMS41NTgtLjA4NSAyLjc4LS42OCAzLjYzMi0xLjc2NmMuNjQ3LS44MjUgMS4wNTYtMS44OTQgMS4yMzctMy4yNDFjLjc0Mi40NDggMS4yOTIgMS4wMzcgMS41OTYgMS43NDVjLjUxNiAxLjIwNS41NDYgMy4xODQtMS4wNjggNC43OTdjLTEuNDE1IDEuNDE0LTMuMTE2IDIuMDI1LTUuNjg2IDIuMDQ0Yy0yLjg1MS0uMDItNS4wMDgtLjkzNS02LjQxLTIuNzE3Yy0xLjMxMy0xLjY3LTEuOTkxLTQuMDgtMi4wMTYtNy4xNjVjLjAyNS0zLjA4NS43MDMtNS40OTYgMi4wMTYtNy4xNjVjMS40MDItMS43ODIgMy41NTgtMi42OTYgNi40MS0yLjcxN2MyLjg3MS4wMiA1LjA2NS45NCA2LjUyMSAyLjczYy43MTQuODc5IDEuMjUyIDEuOTgzIDEuNjA3IDMuMjdsMi4wMTgtLjUzOGMtLjQzLTEuNTg1LTEuMTA3LTIuOTUtMi4wMjctNC4wODNDMTguMzggMS4yIDE1LjY1LjAyNCAxMi4xMzQgMGgtLjAxNEM4LjYxLjAyNCA1LjkxMiAxLjIwNSA0LjA5OSAzLjUxYy0xLjYxNCAyLjA1LTIuNDQ2IDQuOTA0LTIuNDc0IDguNDgydi4wMTZjLjAyOCAzLjU3OC44NiA2LjQzMSAyLjQ3NCA4LjQ4MmMxLjgxMyAyLjMwNSA0LjUxMSAzLjQ4NiA4LjAyIDMuNTFoLjAxNWMzLjEyLS4wMjIgNS4zMTktLjgzOCA3LjEzLTIuNjQ5YzIuMzcxLTIuMzY4IDIuMy01LjMzNiAxLjUxOC03LjE1OGMtLjU2LTEuMzA3LTEuNjI5LTIuMzY4LTMuMDktMy4wN20tNS4zODcgNS4wNjRjLTEuMzA1LjA3NC0yLjY2LS41MTItMi43MjgtMS43NjZjLS4wNS0uOTMuNjYyLTEuOTY5IDIuODA4LTIuMDkycS4zNjktLjAyMi43MjQtLjAyMWMuNzggMCAxLjUwOC4wNzUgMi4xNzEuMjJjLS4yNDcgMy4wODgtMS42OTcgMy41OS0yLjk3NSAzLjY2Ii8+PC9zdmc+"
+                        alt="Tread">
+                </div>
+            </div>
+            <div class="top2">
+                <p id="bold">Products</p>
+                <p id="simple">ActiveTrader</p>
+                <p id="simple">Clearing</p>
+                <p id="simple">Credit Card</p>
+                <p id="simple">Custody</p>
+                <p id="simple">Perpetuals</p>
+                <p id="simple">Exchange</p>
+                <p id="simple">Gemini Dollar</p>
+                <p id="simple">Mobile</p>
+                <p id="simple">Staking</p>
+                <p id="simple">Wallet</p>
+            </div>
+            <div class="top2">
+                <p id="bold">Institutions</p>
+                <p id="simple">Exchange</p>
+                <p id="simple">Custody</p>
+                <p id="simple">OTC</p>
+                <p id="simple">Staking</p>
+            </div>
+            <div class="top2">
+                <p id="bold">Resources</p>
+                <p id="simple">API Docs</p>
+                <p id="simple">Cryptopedia</p>
+                <p id="simple">Fees</p>
+                <p id="simple">Gemini Asset Listing Hub</p>
+                <p id="simple">Gemini Blog</p>
+                <p id="simple">Marketplace</p>
+                <p id="simple">Prices</p>
+                <p id="simple">Security</p>
+                <p id="simple">Trust and safety</p>
+                <p id="simple">Trust Center</p>
+                <p id="simple">TradingView Integration</p>
+            </div>
+            <div class="top2">
+                <p id="bold">Company</p>
+                <p id="simple">Investors</p>
+                <p id="simple">About</p>
+                <p id="simple">Careers</p>
+                <p id="simple">Support Center</p>
+                <p id="simple">Contact Us</p>
+                <p id="simple">System Status</p>
+                <p id="simple">Frontier Fund</p>
+                <p id="simple">Referral Program</p>
+                <p id="simple">Privacy Policy</p>
+                <p id="simple">User Agreement</p>
+                <p id="simple">Gemini Trust Company State Disclosures</p>
+                <p id="simple">Gemini Moonbase State Disclosures</p>
+                <p id="simple">Digital Assets Disclosures</p>
+                <p id="simple">Do Not Share My Personal Information</p>
+            </div>
+        </div>
+        <hr>
+        <div class="bottom">
+            <div class="left">
+                <p>Gemini Trust Company, LLC NMLS #1518126. Gemini Moonbase, LLC NMLS #2403509.</p>
+                <p>© Copyright 2025 Gemini Space Station, LLC or its affiliates.</p>
+                <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+            </div>
+            <div class="right">
+                <a href="#">Site Policy</a>
+                <a href="#">Legal Notice</a>
+                <a href="#"><img src="https://www.gemini.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fglobe-icon.6825cea9.png&w=32&q=75" alt=""></a>
+                <a href="#">English</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
