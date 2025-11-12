@@ -619,6 +619,7 @@ svg {
           position: absolute;
           z-index: 1;
           top: 2vw;
+          font-size: 1vw;
           left: 2vw;
         }
 
@@ -646,7 +647,7 @@ hr {
 }
     
 .spec-value{
-  font-size: 7rem;
+  font-size: 7vw;
 }
 .aerodynamics{
   position: relative;
@@ -654,6 +655,7 @@ hr {
 .aerodynamics-text{
   position: absolute;
   z-index: 1;
+  font-size: 1vw;
   top: 25vw;
   right: 5vw;
 }
@@ -661,6 +663,7 @@ hr {
   position: absolute;
   z-index: 1;
   top: 15vw;
+  font-size: 1vw;
   left: 5vw;
 }
 .intirior1 {
@@ -674,6 +677,7 @@ hr {
   position: absolute;
   z-index: 10;
   top: 25vw;
+  font-size: 1vw;
   right: 5vw;
 }
 .intirior2 {
@@ -687,6 +691,7 @@ hr {
   position: absolute;
   z-index: 10;
   top: 35vw;
+  font-size: 1vw;
   left: 5vw;
 }
 .intirior3 {
@@ -700,6 +705,7 @@ hr {
   position: absolute;
   z-index: 10;
   top: 30vw;
+  font-size: 1vw;
   right: 5vw;
 }
 .intirior4 {
@@ -713,5 +719,6 @@ hr {
   position: absolute;
   z-index: 10;
   top: 25vw;
+  font-size: 1vw;
   left: 5vw;
 }
