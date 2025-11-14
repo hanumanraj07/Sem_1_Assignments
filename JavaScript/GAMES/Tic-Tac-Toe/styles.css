@@ -1,0 +1,71 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+body{
+    text-align: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-family:Yatra One;
+    
+   
+}
+
+.container{
+    width: 100vh;
+    height: 100vh;
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.game{
+    margin-left: 25px;
+    width: 60vh;
+    display: flex;
+    gap: 1vh;
+    flex-wrap: wrap;
+}
+.box{
+    width: 18vh;
+    height: 18vh;
+    font-size: 8rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+     
+    
+}
+
+
+.box:hover{
+    transform: scale(1.01);
+    border: none;
+    background-color: rgb(181, 188, 196);
+    border-radius: 5px;
+}
+.reset{
+    background-color: orange;
+    border:none;
+    border-radius: 50px;
+    margin-top: 10px;
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+}
+.reset:hover{
+    transform: scale(1.1);
+}
+button:disabled{
+    
+    background-color:rgb(195, 194, 194);
+
+}
+  .result {
+      margin-bottom: 20px;
+      font-size: 1.5em;
+      
+      color: white;
+    }
