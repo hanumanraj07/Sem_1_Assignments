@@ -156,7 +156,7 @@ input{
 .catagory{
     background-color: #282828;
     padding: 1%;
-    margin: 1%;
+    margin: 10px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
